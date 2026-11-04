@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="OpenAI math 저장소의 373개 결과 계열과 721개 수학 원고를 검색하고 공부하는 웹사이트">
+  <meta name="theme-color" content="#070b12">
+  <meta property="og:title" content="OpenAI Math Study">
+  <meta property="og:description" content="OpenAI math 연구 카탈로그를 검색하고 학습 진도를 저장하세요.">
+  <meta property="og:type" content="website">
+  <title>OpenAI Math Study</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="components.css">
+  <script defer src="app.js"></script>
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Dataset","name":"OpenAI Math Study catalogue","description":"A study interface for the OpenAI math manuscript collection.","license":"https://www.apache.org/licenses/LICENSE-2.0","isBasedOn":"https://github.com/openai/math"}
+  </script>
+</head>
+<body data-detail-open="false">
+  <a class="skip-link" href="#catalogue">카탈로그로 건너뛰기</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">∴</span>
+        <div>
+          <p>OPEN PROBLEM ATLAS</p>
+          <h1>OpenAI Math Study</h1>
+        </div>
+      </div>
+      <div class="search-wrap">
+        <label class="search-label" for="search">결과 계열, 원고 제목, 초록 검색</label>
+        <input class="search-input" id="search" type="search" placeholder="결과 계열, 원고 제목, 초록 검색" autocomplete="off">
+        <span class="search-hint" aria-hidden="true">Ctrl K</span>
+      </div>
+      <div class="header-stats" aria-label="카탈로그 통계">
+        <span><strong id="family-stat">373</strong> 계열</span>
+        <span><strong id="manuscript-stat">721</strong> 원고</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <aside class="filter-panel" aria-labelledby="filter-title">
+      <h2 class="panel-heading" id="filter-title">난제 필터</h2>
+      <div class="filter-grid">
+        <label class="field" for="subject">
+          <span class="field-label">수학 분야</span>
+          <select class="select" id="subject"><option value="">전체 분야</option></select>
+        </label>
+        <label class="check-row"><input id="lean-only" type="checkbox"> Lean 형식화</label>
+        <label class="check-row"><input id="reasoning-only" type="checkbox"> Reasoning 자료</label>
+        <label class="check-row"><input id="bookmarked-only" type="checkbox"> 북마크만</label>
+        <label class="check-row"><input id="studied-only" type="checkbox"> 공부 완료만</label>
+      </div>
+      <div class="progress-box" aria-live="polite">
+        <strong id="progress-count">0 / 373</strong>
+        <p>공부 완료한 결과 계열</p>
+      </div>
+      <div class="button-row">
+        <a class="button" href="source-data/overview.pdf">전체 개요 PDF</a>
+        <a class="button" href="source-data/CONTENTS.md">원본 카탈로그</a>
+      </div>
+    </aside>
+
+    <section class="catalogue-panel" id="catalogue" aria-labelledby="catalogue-title">
+      <div class="catalogue-heading">
+        <div>
+          <p class="catalogue-kicker">373 FAMILIES · PROOFS · COUNTEREXAMPLES</p>
+          <h2 id="catalogue-title">난제 계열</h2>
+        </div>
+        <p id="result-count" aria-live="polite">카탈로그 불러오는 중</p>
+      </div>
+      <div class="result-list" id="result-list" aria-busy="true">
+        <div class="skeleton"></div>
+        <div class="skeleton"></div>
+        <div class="skeleton"></div>
+      </div>
+      <button class="button load-more" id="load-more" type="button" hidden>결과 더 보기</button>
+    </section>
+
+    <button class="detail-scrim" id="detail-scrim" type="button" tabindex="-1" aria-label="상세 패널 닫기"></button>
+    <aside class="detail-panel" id="detail" aria-label="결과 계열 상세">
+      <div class="mobile-panel-bar"><button class="button" id="close-detail" type="button">닫기</button></div>
+      <div class="empty-state" id="detail-empty">
+        <p class="empty-symbol" aria-hidden="true">∴</p>
+        <p><strong>추적할 난제를 선택하세요.</strong></p>
+        <p>정리, 반례, 형식화 상태와 원고 초록을 한 흐름에서 읽을 수 있습니다.</p>
+      </div>
+      <div id="detail-content" hidden></div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <p>자료 출처: <a href="https://github.com/openai/math">OpenAI math</a>, Apache-2.0. 이 사이트는 비공식 학습 도구입니다.</p>
+  </footer>
+</body>
+</html>

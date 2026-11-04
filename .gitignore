@@ -1,0 +1,6 @@
+.wrangler/
+.dev.vars
+qa/
+Thumbs.db
+Desktop.ini
+.DS_Store

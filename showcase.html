@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenAI Math Study Primitive Showcase</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="components.css">
+</head>
+<body>
+  <main class="showcase">
+    <p class="detail-kicker">Primitive showcase</p>
+    <h1>OpenAI Math Study</h1>
+    <p class="panel-copy">구성 요소의 기본·선택·빈 상태를 확인하는 내부 화면입니다.</p>
+
+    <section aria-labelledby="controls-title">
+      <h2 id="controls-title">Controls</h2>
+      <div class="showcase-grid">
+        <div class="showcase-card">
+          <div class="search-wrap">
+            <label class="search-label" for="showcase-search">원고 검색</label>
+            <input class="search-input" id="showcase-search" type="search" placeholder="제목과 초록 검색">
+            <span class="search-hint" aria-hidden="true">Ctrl K</span>
+          </div>
+        </div>
+        <div class="showcase-card">
+          <label class="check-row"><input type="checkbox" checked> Lean 형식화 결과만</label>
+          <label class="check-row"><input type="checkbox"> 공부 완료 항목만</label>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="rows-title">
+      <h2 id="rows-title">Family rows and badges</h2>
+      <div class="result-list">
+        <button class="family-row" type="button">
+          <span class="family-id">001</span>
+          <span>
+            <strong class="family-title">Milne's rationality conjecture and algebraic specialization</strong>
+            <span class="family-description">Specialized Hodge classes pair rationally with complementary divisor products.</span>
+            <span class="family-meta"><span>Number theory</span><span class="badge badge-lean">Lean</span></span>
+          </span>
+        </button>
+        <button class="family-row" type="button" aria-current="true">
+          <span class="family-id">017</span>
+          <span>
+            <strong class="family-title">The irrationality exponent of π</strong>
+            <span class="family-description">Selected state uses a blue rule and quiet tinted surface.</span>
+            <span class="family-meta"><span>Number theory</span><span class="badge badge-reasoning">Reasoning</span></span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section aria-labelledby="disclosure-title">
+      <h2 id="disclosure-title">Disclosure and feedback</h2>
+      <div class="showcase-grid">
+        <div class="showcase-card">
+          <details class="manuscript" open>
+            <summary>A mathematical manuscript title</summary>
+            <p>원고 초록은 읽기 좋은 길이와 대비로 표시됩니다.</p>
+            <a href="#">원문 PDF 열기</a>
+          </details>
+        </div>
+        <div class="empty-state">조건에 맞는 결과가 없습니다.</div>
+        <div class="error-state">카탈로그를 불러오지 못했습니다. 로컬 서버에서 다시 시도하세요.</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
