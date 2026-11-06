@@ -136,6 +136,14 @@ Base unit: 4px.
 - Accessibility: descriptive link text; ranking and metadata remain text, never color alone.
 - Motion: link color only, 150ms.
 
+### Academic Paper Resource List
+
+- Structure: ranked paper link, authors, year, venue, citation count, and collection date.
+- States: populated, fewer than ten matches, no relevant matches, and data-load/search errors.
+- Selection: at most ten relevant Crossref works per family, ordered by collected citation count.
+- Accessibility: descriptive paper-title links; bibliographic metadata remains readable text.
+- Motion: link color only, 150ms.
+
 ### Progress Control
 
 - Structure: checkbox labelled "Studied" and saved counter.

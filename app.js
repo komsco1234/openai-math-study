@@ -2,7 +2,7 @@
 
 const PAGE_SIZE = 36;
 const STORAGE = { bookmarks: "openai-math-bookmarks", studied: "openai-math-studied" };
-const state = { catalogue: null, videos: {}, videosGeneratedAt: null, videosStatus: "loading", query: "", subject: "", lean: false, reasoning: false, bookmarked: false, studiedOnly: false, selected: null, visible: PAGE_SIZE };
+const state = { catalogue: null, papers: {}, papersGeneratedAt: null, papersStatus: "idle", videos: {}, videosGeneratedAt: null, videosStatus: "loading", query: "", subject: "", lean: false, reasoning: false, bookmarked: false, studiedOnly: false, selected: null, visible: PAGE_SIZE };
 
 const nodes = {
   search: document.querySelector("#search"), subject: document.querySelector("#subject"), lean: document.querySelector("#lean-only"),
@@ -98,6 +98,7 @@ const renderDetail = (family, focusHeading = false) => {
   if (family.lean) actions.append(element("a", { className: "button", text: "Lean 자료", attrs: { href: family.lean, target: "_blank", rel: "noreferrer" } }));
   if (family.reasoning) actions.append(element("a", { className: "button", text: "Reasoning PDF", attrs: { href: family.reasoning } }));
   nodes.detailContent.append(actions);
+  nodes.detailContent.append(renderPaperSection(family, state.papers[family.id], state.papersGeneratedAt, state.papersStatus));
   nodes.detailContent.append(renderVideoSection(family, state.videos[family.id], state.videosGeneratedAt, state.videosStatus));
   const papers = element("section", { className: "manuscript-list" });
   papers.append(element("h3", { text: "원고와 초록" }));
@@ -116,10 +117,24 @@ function selectFamily(id, focusHeading = true) {
   const family = state.catalogue.families.find((item) => item.id === id);
   if (!family) return;
   returnFocusId = id;
-  state.selected = id; history.replaceState(null, "", `#family-${id}`); renderResults(); renderDetail(family, focusHeading);
+  state.selected = id; history.replaceState(null, "", `#family-${id}`); renderResults();
   document.body.dataset.detailOpen = "true";
   updateModalState(true);
+  renderDetail(family, focusHeading);
+  nodes.detail.scrollTop = 0;
+  ensurePapers();
 }
+
+const ensurePapers = () => {
+  if (state.papersStatus !== "idle") return;
+  state.papersStatus = "loading";
+  loadPaperData().then((result) => {
+    state.papersStatus = result.status; state.papers = result.data?.families ?? {}; state.papersGeneratedAt = result.data?.generatedAt ?? null;
+    const family = state.catalogue.families.find((item) => item.id === state.selected);
+    const restoreFocus = nodes.detail.contains(document.activeElement);
+    if (family) { renderDetail(family, restoreFocus); nodes.detail.scrollTop = 0; }
+  });
+};
 
 function toggleStored(collection, key, family) {
   if (collection.has(family.id)) collection.delete(family.id); else collection.add(family.id);
