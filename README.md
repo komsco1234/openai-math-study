@@ -8,6 +8,7 @@ OpenAI의 [`openai/math`](https://github.com/openai/math) 연구 카탈로그를
 - 17개 수학 분야 분류
 - Lean 형식화 링크 245개
 - reasoning summary PDF 10개
+- 373개 난제별 YouTube 검색 결과: 관련 영상 675개, 250개 계열에 최대 10개씩 제공
 - 전체 개요 PDF, 원본 카탈로그, 변경 이력, Apache-2.0 라이선스
 - 업스트림 커밋: `4eaee87548250b2682affda7d05d947c05554bae`
 
@@ -28,6 +29,9 @@ python -m http.server 4173
 - 북마크와 공부 완료 상태를 브라우저 `localStorage`에 저장
 - 375px부터 데스크톱까지 반응형 목록·상세 보기
 - 키보드 탐색, 명확한 포커스, reduced-motion 지원
+- 난제별 YouTube 학습 영상 조회수순 목록과 영상이 없는 계열의 직접 검색 링크
+
+YouTube 자료는 2026-11-06에 난제 제목과 분야로 검색한 후보 15개에서 관련 핵심어를 확인한 뒤, 수집 당시 조회수 내림차순으로 최대 10개를 선정했습니다. 조회수와 검색 결과는 시간이 지나면 달라질 수 있으며 `scripts/fetch-youtube.mjs`로 갱신할 수 있습니다.
 
 ## 출처와 라이선스
 

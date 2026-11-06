@@ -128,6 +128,14 @@ Base unit: 4px.
 - Accessibility: native disclosure semantics and keyboard behavior.
 - Motion: none; native state is preferred over height animation.
 
+### Video Resource List
+
+- Structure: ranked YouTube link, channel, view count, duration, and collection date.
+- States: populated, fewer than ten matches, and no relevant matches with a direct search link.
+- Selection: at most ten relevant videos per family, ordered by collected view count.
+- Accessibility: descriptive link text; ranking and metadata remain text, never color alone.
+- Motion: link color only, 150ms.
+
 ### Progress Control
 
 - Structure: checkbox labelled "Studied" and saved counter.

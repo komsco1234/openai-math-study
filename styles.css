@@ -170,6 +170,9 @@ a:hover { color: var(--accent-hover); }
   .filter-grid { grid-template-columns: 1fr; }
   .catalogue-heading { display: block; }
   .catalogue-heading p { margin-block-start: var(--space-2); }
+  .detail-panel { inset-inline: 0; width: 100%; padding: var(--space-4); }
+  .mobile-panel-bar { position: sticky; top: 0; z-index: 1; padding-block-end: var(--space-3); background: var(--surface-primary); }
+  .mobile-panel-bar .button { width: 100%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
