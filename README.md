@@ -37,6 +37,22 @@ YouTube 자료는 2026-11-06에 난제 제목과 분야로 검색한 후보 15�
 
 논문 자료는 2026-11-06에 Crossref 제목 검색 후보 20개에서 관련 핵심어를 확인한 뒤, 수집 당시 인용 수 내림차순으로 최대 10개를 선정했습니다. Crossref 메타데이터는 `scripts/fetch-papers.mjs`로 갱신할 수 있습니다.
 
+## 데이터 갱신
+
+`source-data/CONTENTS.md`, `source-data/overview.tex`, `source-data/UPSTREAM_COMMIT`을 새 업스트림 자료로 교체한 뒤 카탈로그를 다시 만듭니다.
+
+```bash
+node scripts/build-catalog.mjs
+```
+
+스크립트는 `data/catalog.json`을 생성합니다. 원문의 ``$`x`$`` 표기는 화면 표시용 `$x$`로 보존하며, 사이트 검색은 수식 구분자 `$`를 제거한 텍스트를 사용합니다. 재현 가능한 날짜가 필요하면 `--generated-at=YYYY-MM-DD`를 지정합니다.
+
+```bash
+node scripts/build-catalog.mjs --generated-at=2026-11-09
+node scripts/fetch-papers.mjs --refresh
+node scripts/fetch-youtube.mjs <path-to-yt-dlp> --refresh
+```
+
 ## 출처와 라이선스
 
 데이터 출처는 [`openai/math`](https://github.com/openai/math)이며 Apache-2.0 라이선스를 따릅니다. 사이트 코드도 같은 라이선스로 배포합니다. 이 프로젝트는 OpenAI의 공식 웹사이트가 아닌 비공식 학습 도구입니다.

@@ -39,7 +39,7 @@ const element = (tag, options = {}) => {
 
 const badge = (text, variant = "") => element("span", { className: `badge ${variant}`.trim(), text });
 
-const searchableText = (family) => [family.id, family.title, family.description, family.subject, ...family.manuscripts.flatMap((paper) => [paper.title, paper.abstract])].join(" ").toLocaleLowerCase();
+const searchableText = (family) => [family.id, family.title, family.description, family.subject, ...family.manuscripts.flatMap((paper) => [paper.title, paper.abstract])].join(" ").replaceAll("$", "").toLocaleLowerCase();
 
 const filteredFamilies = () => state.catalogue.families.filter((family) => {
   const matchesQuery = !state.query || searchableText(family).includes(state.query);
