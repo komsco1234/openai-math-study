@@ -82,11 +82,15 @@ const actionButton = (text, active, action, onClick) => {
   return button;
 };
 
+const renderMath = (...targets) => targets.forEach((target) => window.renderMathInElement?.(target, { delimiters: [{ left: "$", right: "$", display: false }], throwOnError: false }));
+
 const renderDetail = (family, focusHeading = false) => {
   nodes.detailEmpty.hidden = true; nodes.detailContent.hidden = false; nodes.detailContent.replaceChildren();
   nodes.detailContent.append(element("p", { className: "detail-kicker", text: `결과 계열 ${family.id} · ${family.subject}` }));
   const title = element("h2", { className: "detail-title", text: family.title, attrs: { id: "detail-title", tabindex: "-1" } });
-  nodes.detailContent.append(title, element("p", { className: "detail-description", text: family.description }));
+  const description = element("p", { className: "detail-description", text: family.description });
+  renderMath(title, description);
+  nodes.detailContent.append(title, description);
   const status = element("div", { className: "detail-status" });
   status.append(badge(`${family.manuscripts.length}개 원고`));
   if (family.lean) status.append(badge("Lean 형식화", "badge-lean"));
@@ -105,7 +109,10 @@ const renderDetail = (family, focusHeading = false) => {
   family.manuscripts.forEach((paper, index) => {
     const details = element("details", { className: "manuscript" });
     if (index === 0) details.open = true;
-    details.append(element("summary", { text: paper.title }), element("p", { text: paper.abstract }));
+    const summary = element("summary", { text: paper.title });
+    const abstract = element("p", { text: paper.abstract });
+    renderMath(summary, abstract);
+    details.append(summary, abstract);
     details.append(element("a", { text: "GitHub에서 PDF 열기", attrs: { href: paper.pdf, target: "_blank", rel: "noreferrer" } }));
     papers.append(details);
   });
@@ -139,6 +146,7 @@ const ensurePapers = () => {
 function toggleStored(collection, key, family, action) {
   if (collection.has(family.id)) collection.delete(family.id); else collection.add(family.id);
   saveSet(key, collection); renderResults(); renderDetail(family);
+  nodes.detailContent.querySelector(`[data-action="${action}"]`)?.focus();
 }
 
 const updateFilters = () => {
@@ -146,7 +154,6 @@ const updateFilters = () => {
   state.lean = nodes.lean.checked; state.reasoning = nodes.reasoning.checked; state.bookmarked = nodes.bookmarked.checked; state.studiedOnly = nodes.studiedOnly.checked;
   state.visible = PAGE_SIZE; renderResults();
 };
-  nodes.detailContent.querySelector(`[data-action="${action}"]`)?.focus();
 
 const updateModalState = (open) => {
   const modal = open && overlayQuery.matches;

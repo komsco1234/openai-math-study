@@ -7,7 +7,7 @@ const overviewPath = new URL("source-data/overview.tex", root);
 const commitPath = new URL("source-data/UPSTREAM_COMMIT", root);
 const defaultOutputPath = new URL("data/catalog.json", root);
 const sourceUrl = "https://github.com/openai/math";
-const sourceFileUrl = `${sourceUrl}/blob/main/`;
+const sourceFileUrl = (commit) => `${sourceUrl}/blob/${commit}/`;
 
 const reasoningByFamily = new Map([
   ["007", "ordinary-two-point-correlations.pdf"],
@@ -50,7 +50,7 @@ const subjectByFamily = (overview) => {
   return subjects;
 };
 
-const parseCatalogue = (contents, subjects) => {
+const parseCatalogue = (contents, subjects, fileUrl) => {
   const families = [];
   const blocks = [...contents.matchAll(/<tbody><tr>\s*<td>\s*([\s\S]*?)\s*<\/td>\s*<\/tr><\/tbody>/g)]
     .map((match) => match[1].trim());
@@ -66,7 +66,7 @@ const parseCatalogue = (contents, subjects) => {
         title: displayText(rawTitle),
         description: displayText(leanMatch ? rawDescription.slice(0, leanMatch.index) : rawDescription),
         subject: subjects.get(id),
-        lean: leanMatch ? `${sourceFileUrl}${leanMatch[1]}` : null,
+        lean: leanMatch ? `${fileUrl}${leanMatch[1]}` : null,
         reasoning: reasoningByFamily.has(id) ? `source-data/reasoning_traces/${reasoningByFamily.get(id)}` : null,
         manuscripts: []
       };
@@ -80,14 +80,14 @@ const parseCatalogue = (contents, subjects) => {
     family.manuscripts.push({
       title: displayText(manuscript[1]),
       abstract: displayText(manuscript[3]),
-      pdf: `${sourceFileUrl}${manuscript[2]}`
+      pdf: `${fileUrl}${manuscript[2]}`
     });
   }
   return families;
 };
 
 const buildCatalogue = (contents, overview, upstreamCommit, generatedAt) => {
-  const families = parseCatalogue(contents, subjectByFamily(overview));
+  const families = parseCatalogue(contents, subjectByFamily(overview), sourceFileUrl(upstreamCommit.trim()));
   const manuscripts = families.reduce((sum, family) => sum + family.manuscripts.length, 0);
   assert.equal(new Set(families.map((family) => family.id)).size, families.length, "Duplicate family ID");
   assert.ok(families.every((family) => family.manuscripts.length > 0), "Family without manuscripts");
@@ -122,7 +122,8 @@ const selfCheck = () => {
   assert.equal(catalogue.families[0].title, "A $x$ result.");
   assert.equal(catalogue.families[0].manuscripts[0].title, "Proof–of $x$");
   assert.equal(catalogue.families[0].manuscripts[0].abstract, "Shows $x\\gt0$.");
-  assert.equal(catalogue.families[0].lean, `${sourceFileUrl}lean/docs/001.md`);
+  assert.equal(catalogue.families[0].lean, "https://github.com/openai/math/blob/abc/lean/docs/001.md");
+  assert.equal(catalogue.families[0].manuscripts[0].pdf, "https://github.com/openai/math/blob/abc/preprints/x/paper.pdf");
   assert.deepEqual(catalogue.stats, { families: 1, manuscripts: 1, formalizedFamilies: 1, reasoningSummaries: 0, subjects: 1 });
   console.log("self-check passed");
 };

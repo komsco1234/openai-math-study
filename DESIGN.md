@@ -189,5 +189,5 @@ Accepted debt:
 
 | Item | Location | Why accepted | Exit |
 | --- | --- | --- | --- |
-| Mathematical TeX remains plain source text | Catalogue descriptions | Full MathJax would add third-party runtime and weaken offline/performance goals | Add local KaTeX build only if typeset formulas become a core requirement |
+| Mathematical TeX remains plain source text in result rows | Catalogue list | Typesetting every row would slow list rendering; the detail panel renders `$...$` with the local KaTeX build in `vendor/katex/` | Render rows too if list performance stays within budget |
 

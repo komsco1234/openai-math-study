@@ -39,19 +39,25 @@ YouTube 자료는 2026-11-06에 난제 제목과 분야로 검색한 후보 15�
 
 ## 데이터 갱신
 
-`source-data/CONTENTS.md`, `source-data/overview.tex`, `source-data/UPSTREAM_COMMIT`을 새 업스트림 자료로 교체한 뒤 카탈로그를 다시 만듭니다.
+필요한 도구: Node.js 18 이상(모든 스크립트), [`yt-dlp`](https://github.com/yt-dlp/yt-dlp)(YouTube 자료만). 논문 자료는 Crossref API를 쓰므로 인터넷 연결이 필요합니다.
 
-```bash
-node scripts/build-catalog.mjs
-```
+1. 원본 카탈로그 갱신: `source-data/CONTENTS.md`, `source-data/overview.tex`, `source-data/UPSTREAM_COMMIT`을 새 업스트림 자료로 교체한 뒤 실행합니다.
 
-스크립트는 `data/catalog.json`을 생성합니다. 원문의 ``$`x`$`` 표기는 화면 표시용 `$x$`로 보존하며, 사이트 검색은 수식 구분자 `$`를 제거한 텍스트를 사용합니다. 재현 가능한 날짜가 필요하면 `--generated-at=YYYY-MM-DD`를 지정합니다.
+   ```bash
+   node scripts/build-catalog.mjs
+   ```
 
-```bash
-node scripts/build-catalog.mjs --generated-at=2026-11-09
-node scripts/fetch-papers.mjs --refresh
-node scripts/fetch-youtube.mjs <path-to-yt-dlp> --refresh
-```
+   스크립트는 `data/catalog.json`을 생성합니다. 원문의 ``$`x`$`` 표기는 `$x$`로 보존하고, 상세 패널에서 `vendor/katex/`의 로컬 KaTeX로 렌더링합니다. 사이트 검색은 수식 구분자 `$`를 제거한 텍스트를 사용합니다. 원고 PDF·Lean 링크는 `UPSTREAM_COMMIT`에 고정됩니다. 재현 가능한 날짜가 필요하면 `--generated-at=YYYY-MM-DD`를, 점검만 하려면 `--self-check`를 지정합니다.
+
+2. 논문 자료 갱신(Crossref)
+   - 점검: `node scripts/fetch-papers.mjs --self-check`
+   - 이어서 수집: `node scripts/fetch-papers.mjs`
+   - 처음부터 다시 수집: `node scripts/fetch-papers.mjs --refresh`
+
+3. YouTube 자료 갱신(yt-dlp 실행 파일 경로를 첫 인자로 지정)
+   - 점검: `node scripts/fetch-youtube.mjs --self-check`
+   - 이어서 수집: `node scripts/fetch-youtube.mjs <yt-dlp 경로>`
+   - 처음부터 다시 수집: `node scripts/fetch-youtube.mjs <yt-dlp 경로> --refresh`
 
 ## 출처와 라이선스
 
