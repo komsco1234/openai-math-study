@@ -76,8 +76,8 @@ const renderResults = () => {
   nodes.progress.textContent = `${studied.size.toLocaleString("ko-KR")} / ${state.catalogue.stats.families.toLocaleString("ko-KR")}`;
 };
 
-const actionButton = (text, active, onClick) => {
-  const button = element("button", { className: active ? "button button-primary" : "button", text, attrs: { type: "button", "aria-pressed": String(active) } });
+const actionButton = (text, active, action, onClick) => {
+  const button = element("button", { className: active ? "button button-primary" : "button", text, attrs: { type: "button", "aria-pressed": String(active), "data-action": action } });
   button.addEventListener("click", onClick);
   return button;
 };
@@ -93,8 +93,8 @@ const renderDetail = (family, focusHeading = false) => {
   if (family.reasoning) status.append(badge("Reasoning 요약", "badge-reasoning"));
   nodes.detailContent.append(status);
   const actions = element("div", { className: "button-row" });
-  actions.append(actionButton(bookmarks.has(family.id) ? "북마크 해제" : "북마크", bookmarks.has(family.id), () => toggleStored(bookmarks, STORAGE.bookmarks, family)));
-  actions.append(actionButton(studied.has(family.id) ? "공부 완료 취소" : "공부 완료", studied.has(family.id), () => toggleStored(studied, STORAGE.studied, family)));
+  actions.append(actionButton(bookmarks.has(family.id) ? "북마크 해제" : "북마크", bookmarks.has(family.id), "bookmark", () => toggleStored(bookmarks, STORAGE.bookmarks, family, "bookmark")));
+  actions.append(actionButton(studied.has(family.id) ? "공부 완료 취소" : "공부 완료", studied.has(family.id), "studied", () => toggleStored(studied, STORAGE.studied, family, "studied")));
   if (family.lean) actions.append(element("a", { className: "button", text: "Lean 자료", attrs: { href: family.lean, target: "_blank", rel: "noreferrer" } }));
   if (family.reasoning) actions.append(element("a", { className: "button", text: "Reasoning PDF", attrs: { href: family.reasoning } }));
   nodes.detailContent.append(actions);
@@ -136,7 +136,7 @@ const ensurePapers = () => {
   });
 };
 
-function toggleStored(collection, key, family) {
+function toggleStored(collection, key, family, action) {
   if (collection.has(family.id)) collection.delete(family.id); else collection.add(family.id);
   saveSet(key, collection); renderResults(); renderDetail(family);
 }
@@ -146,6 +146,7 @@ const updateFilters = () => {
   state.lean = nodes.lean.checked; state.reasoning = nodes.reasoning.checked; state.bookmarked = nodes.bookmarked.checked; state.studiedOnly = nodes.studiedOnly.checked;
   state.visible = PAGE_SIZE; renderResults();
 };
+  nodes.detailContent.querySelector(`[data-action="${action}"]`)?.focus();
 
 const updateModalState = (open) => {
   const modal = open && overlayQuery.matches;
@@ -206,6 +207,6 @@ nodes.loadMore.addEventListener("click", () => { state.visible += PAGE_SIZE; ren
 nodes.closeDetail.addEventListener("click", closeDetail); nodes.detailScrim.addEventListener("click", closeDetail);
 nodes.detail.addEventListener("keydown", trapModalFocus);
 overlayQuery.addEventListener("change", () => updateModalState(document.body.dataset.detailOpen === "true"));
-document.addEventListener("keydown", (event) => { if ((event.ctrlKey || event.metaKey) && event.key.toLocaleLowerCase() === "k") { event.preventDefault(); nodes.search.focus(); } if (event.key === "Escape") closeDetail(); });
+document.addEventListener("keydown", (event) => { if ((event.ctrlKey || event.metaKey) && event.key.toLocaleLowerCase() === "k") { event.preventDefault(); nodes.search.focus(); } if (event.key === "Escape" && nodes.detail.getAttribute("aria-modal") === "true") closeDetail(); });
 
 loadCatalogue();
