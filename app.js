@@ -40,10 +40,15 @@ const element = (tag, options = {}) => {
 const badge = (text, variant = "") => element("span", { className: `badge ${variant}`.trim(), text });
 
 const searchableText = (family) => [family.id, family.title, family.description, family.subject, ...family.manuscripts.flatMap((paper) => [paper.title, paper.abstract])].join(" ").replaceAll("$", "").toLocaleLowerCase();
+// Built on the first search, not at load, to keep the initial render off the main thread.
 const searchIndex = new Map();
+const searchText = (family) => {
+  if (!searchIndex.has(family.id)) searchIndex.set(family.id, searchableText(family));
+  return searchIndex.get(family.id);
+};
 
 const filteredFamilies = () => state.catalogue.families.filter((family) => {
-  const matchesQuery = !state.query || searchIndex.get(family.id).includes(state.query);
+  const matchesQuery = !state.query || searchText(family).includes(state.query);
   return matchesQuery && (!state.subject || family.subject === state.subject) && (!state.lean || family.lean) &&
     (!state.reasoning || family.reasoning) && (!state.bookmarked || bookmarks.has(family.id)) && (!state.studiedOnly || studied.has(family.id));
 });
@@ -213,7 +218,6 @@ const loadCatalogue = async () => {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     if (!data || !Array.isArray(data.families) || typeof data.stats?.families !== "number") throw new Error("Invalid catalogue");
-    data.families.forEach((family) => searchIndex.set(family.id, searchableText(family)));
     state.catalogue = data;
     nodes.familyStat.textContent = data.stats.families.toLocaleString("ko-KR"); nodes.manuscriptStat.textContent = data.stats.manuscripts.toLocaleString("ko-KR");
     [...new Set(data.families.map((family) => family.subject))].sort().forEach((subject) => nodes.subject.append(element("option", { text: subject, attrs: { value: subject } })));
