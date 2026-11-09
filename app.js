@@ -2,7 +2,7 @@
 
 const PAGE_SIZE = 36;
 const STORAGE = { bookmarks: "openai-math-bookmarks", studied: "openai-math-studied" };
-const state = { catalogue: null, papers: {}, papersGeneratedAt: null, papersStatus: "idle", videos: {}, videosGeneratedAt: null, videosStatus: "loading", query: "", subject: "", lean: false, reasoning: false, bookmarked: false, studiedOnly: false, selected: null, visible: PAGE_SIZE };
+const state = { catalogue: null, papers: {}, papersGeneratedAt: null, papersStatus: "idle", videos: {}, videosGeneratedAt: null, videosStatus: "idle", query: "", subject: "", lean: false, reasoning: false, bookmarked: false, studiedOnly: false, selected: null, visible: PAGE_SIZE };
 
 const nodes = {
   search: document.querySelector("#search"), subject: document.querySelector("#subject"), lean: document.querySelector("#lean-only"),
@@ -145,17 +145,24 @@ function selectFamily(id, focusHeading = true) {
   updateModalState(true);
   renderDetail(family, focusHeading);
   nodes.detail.scrollTop = 0;
-  ensurePapers();
+  ensureDetailData("papers", "data/papers.json", ".paper-section", renderPaperSection);
+  ensureDetailData("videos", "data/youtube.json", ".video-section", renderVideoSection);
 }
 
-const ensurePapers = () => {
-  if (state.papersStatus !== "idle") return;
-  state.papersStatus = "loading";
-  loadPaperData().then((result) => {
-    state.papersStatus = result.status; state.papers = result.data?.families ?? {}; state.papersGeneratedAt = result.data?.generatedAt ?? null;
+const loadData = (url) => fetch(url).then((response) => {
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.json();
+}).then((data) => ({ status: "ready", data })).catch(() => ({ status: "error", data: null }));
+
+// Papers and videos are only shown in the detail panel, so they load on first selection
+// and replace just their own section (focus and scroll position stay where they are).
+const ensureDetailData = (key, url, selector, render) => {
+  if (state[`${key}Status`] !== "idle") return;
+  state[`${key}Status`] = "loading";
+  loadData(url).then((result) => {
+    state[`${key}Status`] = result.status; state[key] = result.data?.families ?? {}; state[`${key}GeneratedAt`] = result.data?.generatedAt ?? null;
     const family = state.catalogue.families.find((item) => item.id === state.selected);
-    const restoreFocus = nodes.detail.contains(document.activeElement);
-    if (family) { renderDetail(family, restoreFocus); nodes.detail.scrollTop = 0; }
+    if (family) nodes.detailContent.querySelector(selector)?.replaceWith(render(family, state[key][family.id], state[`${key}GeneratedAt`], state[`${key}Status`]));
   });
 };
 
@@ -202,18 +209,12 @@ const trapModalFocus = (event) => {
 
 const loadCatalogue = async () => {
   try {
-    const [response, videoData] = await Promise.all([
-      fetch("data/catalog.json"),
-      fetch("data/youtube.json").then((result) => {
-        if (!result.ok) throw new Error(`HTTP ${result.status}`);
-        return result.json();
-      }).then((data) => ({ status: "ready", data })).catch(() => ({ status: "error", data: null }))
-    ]);
+    const response = await fetch("data/catalog.json");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     if (!data || !Array.isArray(data.families) || typeof data.stats?.families !== "number") throw new Error("Invalid catalogue");
     data.families.forEach((family) => searchIndex.set(family.id, searchableText(family)));
-    state.catalogue = data; state.videos = videoData.data?.families ?? {}; state.videosGeneratedAt = videoData.data?.generatedAt ?? null; state.videosStatus = videoData.status;
+    state.catalogue = data;
     nodes.familyStat.textContent = data.stats.families.toLocaleString("ko-KR"); nodes.manuscriptStat.textContent = data.stats.manuscripts.toLocaleString("ko-KR");
     [...new Set(data.families.map((family) => family.subject))].sort().forEach((subject) => nodes.subject.append(element("option", { text: subject, attrs: { value: subject } })));
     renderResults();

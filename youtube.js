@@ -15,6 +15,7 @@ const formatDuration = (seconds) => {
 const renderVideoSection = (family, record, generatedAt, status) => {
   const section = element("section", { className: "video-section" });
   section.append(element("h3", { text: "YouTube 학습 영상" }));
+  if (status === "idle" || status === "loading") return loadingSection(section, "YouTube 학습 영상을 불러오는 중입니다.");
   if (status === "error") {
     section.append(element("p", { className: "video-empty", text: "동영상 자료를 불러오지 못했습니다. 잠시 후 새로고침해 주세요." }));
     return section;

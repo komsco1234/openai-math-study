@@ -1,21 +1,19 @@
 "use strict";
 
-const loadPaperData = () => fetch("data/papers.json").then((response) => {
-  if (!response.ok) throw new Error(`HTTP ${response.status}`);
-  return response.json();
-}).then((data) => ({ status: "ready", data })).catch(() => ({ status: "error", data: null }));
+// Skeleton rows for a detail section whose data is still loading; shared with youtube.js.
+const loadingSection = (section, label) => {
+  section.setAttribute("aria-busy", "true");
+  section.append(element("p", { className: "visually-hidden", text: label }));
+  for (let index = 0; index < 3; index += 1) section.append(element("div", { className: "skeleton skeleton-line", attrs: { "aria-hidden": "true" } }));
+  return section;
+};
 
 const paperMessage = (text) => element("p", { className: "video-empty", text });
 
 const renderPaperSection = (family, record, generatedAt, status) => {
   const section = element("section", { className: "paper-section" });
   section.append(element("h3", { text: "관련 논문" }));
-  if (status === "idle" || status === "loading") {
-    section.setAttribute("aria-busy", "true");
-    section.append(element("p", { className: "visually-hidden", text: "관련 논문을 불러오는 중입니다." }));
-    for (let index = 0; index < 3; index += 1) section.append(element("div", { className: "skeleton skeleton-line", attrs: { "aria-hidden": "true" } }));
-    return section;
-  }
+  if (status === "idle" || status === "loading") return loadingSection(section, "관련 논문을 불러오는 중입니다.");
   if (status === "error") {
     section.append(paperMessage("논문 자료를 불러오지 못했습니다. 잠시 후 새로고침해 주세요."));
     return section;
