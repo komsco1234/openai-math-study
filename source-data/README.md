@@ -17,8 +17,8 @@ The current catalogue contains 721 manuscripts organized into 373 families. A fa
 
 - Start with the [overview](overview.pdf) for descriptions of the families.
 - Use the [manuscript map](CONTENTS.md) to find individual papers and their supporting materials.
-- The [`preprints/`](preprints/) directory contains PDFs, source files, and manuscript-specific citation and build instructions.
-- The [Lean library](lean/README.md) and [formalization catalogue](lean/formalization.yaml) describe the available formal proofs, their associated papers, and verification configurations. See the [Comparator instructions](lean/ComparatorChallenges/README.md) for additional checking instructions. The repository has ~42% top-line results formalized.
+- The [`preprints/`](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae/preprints) directory contains PDFs, source files, and manuscript-specific citation and build instructions.
+- The [Lean library](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/README.md) and [formalization catalogue](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/formalization.yaml) describe the available formal proofs, their associated papers, and verification configurations. See the [Comparator instructions](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/README.md) for additional checking instructions. The repository has ~42% top-line results formalized.
 - Updates to the repo are described in the [history](history.md).
 
 ### Reasoning summaries
