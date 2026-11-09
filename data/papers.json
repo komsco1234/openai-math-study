@@ -8,19 +8,6 @@
       "candidatesScanned": 20,
       "papers": [
         {
-          "doi": "10.2139/ssrn.2910902",
-          "title": "Below the Zero Lower Bound: A Shadow-Rate Term Structure Model for the Euro Area",
-          "url": "https://doi.org/10.2139/ssrn.2910902",
-          "authors": [
-            "Wolfgang Lemke",
-            "Andreea Vladu"
-          ],
-          "year": 2017,
-          "venue": "",
-          "citationCount": 26,
-          "type": "posted-content"
-        },
-        {
           "doi": "10.2307/3026930",
           "title": "Surface Area and the Cylinder Area Paradox",
           "url": "https://doi.org/10.2307/3026930",
@@ -33,20 +20,6 @@
           "type": "journal-article"
         },
         {
-          "doi": "10.1088/0954-3899/32/11/l01",
-          "title": "Leptogenesis below the Davidson–Ibarra bound",
-          "url": "https://doi.org/10.1088/0954-3899/32/11/l01",
-          "authors": [
-            "Ernest Ma",
-            "Narendra Sahu",
-            "Utpal Sarkar"
-          ],
-          "year": 2006,
-          "venue": "Journal of Physics G: Nuclear and Particle Physics",
-          "citationCount": 18,
-          "type": "journal-article"
-        },
-        {
           "doi": "10.1016/0012-365x(90)90168-h",
           "title": "A simple lower bound on edge coverings by cliques",
           "url": "https://doi.org/10.1016/0012-365x(90)90168-h",
@@ -56,45 +29,6 @@
           "year": 1990,
           "venue": "Discrete Mathematics",
           "citationCount": 16,
-          "type": "journal-article"
-        },
-        {
-          "doi": "10.1136/bmj.316.7146.1734",
-          "title": "Half of all doctors are below average",
-          "url": "https://doi.org/10.1136/bmj.316.7146.1734",
-          "authors": [
-            "Jan Poloniecki"
-          ],
-          "year": 1998,
-          "venue": "BMJ",
-          "citationCount": 15,
-          "type": "journal-article"
-        },
-        {
-          "doi": "10.1038/283473a0",
-          "title": "Size constancy fails below half a degree",
-          "url": "https://doi.org/10.1038/283473a0",
-          "authors": [
-            "John Ross",
-            "B. Jenkins",
-            "J. R. Johnstone"
-          ],
-          "year": 1980,
-          "venue": "Nature",
-          "citationCount": 14,
-          "type": "journal-article"
-        },
-        {
-          "doi": "10.2139/ssrn.2848045",
-          "title": "Below the Zero Lower Bound: A Shadow-Rate Term Structure Model for the Euro Area",
-          "url": "https://doi.org/10.2139/ssrn.2848045",
-          "authors": [
-            "Wolfgang Lemke",
-            "Andreea Vladu"
-          ],
-          "year": 2016,
-          "venue": "SSRN Electronic Journal",
-          "citationCount": 8,
           "type": "journal-article"
         },
         {
@@ -119,18 +53,6 @@
           ],
           "year": 1964,
           "venue": "Michigan Mathematical Journal",
-          "citationCount": 2,
-          "type": "journal-article"
-        },
-        {
-          "doi": "10.1109/6.328731",
-          "title": "Below the half-micron mark",
-          "url": "https://doi.org/10.1109/6.328731",
-          "authors": [
-            "G. Tiwary"
-          ],
-          "year": 1994,
-          "venue": "IEEE Spectrum",
           "citationCount": 2,
           "type": "journal-article"
         }
@@ -1497,7 +1419,7 @@
         },
         {
           "doi": "10.1007/978-3-031-22832-2_7",
-          "title": "Optimal Prophet Inequality with Less than One Sample",
+          "title": "Optimal Prophet Inequality with Less than One Sample",
           "url": "https://doi.org/10.1007/978-3-031-22832-2_7",
           "authors": [
             "Nick Gravin",
@@ -2023,7 +1945,7 @@
         },
         {
           "doi": "10.1080/01621459.1977.10479971",
-          "title": "Counting the Number of<i>r×c</i>Contingency Tables with Fixed Margins",
+          "title": "Counting the Number of r×c Contingency Tables with Fixed Margins",
           "url": "https://doi.org/10.1080/01621459.1977.10479971",
           "authors": [
             "Mitchell Gail",
@@ -3501,7 +3423,7 @@
         },
         {
           "doi": "10.1007/978-3-642-02441-2_8",
-          "title": "Reoptimization of the Shortest Common Superstring Problem",
+          "title": "Reoptimization of the Shortest Common Superstring Problem",
           "url": "https://doi.org/10.1007/978-3-642-02441-2_8",
           "authors": [
             "Davide Bilò",
@@ -3560,7 +3482,7 @@
         },
         {
           "doi": "10.1007/978-3-032-35967-4_10",
-          "title": "On the State Complexity of Two-Way Reversible Finite Automata",
+          "title": "On the State Complexity of Two-Way Reversible Finite Automata",
           "url": "https://doi.org/10.1007/978-3-032-35967-4_10",
           "authors": [
             "Daniil Lyubaev",
@@ -4093,7 +4015,7 @@
         },
         {
           "doi": "10.1007/978-3-031-43587-4_17",
-          "title": "On the Parallel Complexity of Group Isomorphism via Weisfeiler–Leman",
+          "title": "On the Parallel Complexity of Group Isomorphism via Weisfeiler–Leman",
           "url": "https://doi.org/10.1007/978-3-031-43587-4_17",
           "authors": [
             "Joshua A. Grochow",
@@ -4106,7 +4028,7 @@
         },
         {
           "doi": "10.2140/moscow.2020.9.229",
-          "title": "Generalizations of k-dimensional Weisfeiler–Leman\nstabilization",
+          "title": "Generalizations of k-dimensional Weisfeiler–Leman stabilization",
           "url": "https://doi.org/10.2140/moscow.2020.9.229",
           "authors": [
             "Anuj Dawar",
@@ -4443,19 +4365,6 @@
           "year": 2010,
           "venue": "Theoretical Computer Science",
           "citationCount": 38,
-          "type": "journal-article"
-        },
-        {
-          "doi": "10.1016/0370-2693(86)91102-0",
-          "title": "Higher “spins” in one and two space-time dimensions",
-          "url": "https://doi.org/10.1016/0370-2693(86)91102-0",
-          "authors": [
-            "Anders K.H. Bengtsson",
-            "Ingemar Bengtsson"
-          ],
-          "year": 1986,
-          "venue": "Physics Letters B",
-          "citationCount": 18,
           "type": "journal-article"
         },
         {
@@ -7329,21 +7238,6 @@
           "type": "journal-article"
         },
         {
-          "doi": "10.1142/s1793830919500289",
-          "title": "Upper bounds for the sum of Laplacian eigenvalues of a graph and Brouwer’s conjecture",
-          "url": "https://doi.org/10.1142/s1793830919500289",
-          "authors": [
-            "Hilal A. Ganie",
-            "S. Pirzada",
-            "Rezwan Ul Shaban",
-            "X. Li"
-          ],
-          "year": 2019,
-          "venue": "Discrete Mathematics, Algorithms and Applications",
-          "citationCount": 16,
-          "type": "journal-article"
-        },
-        {
           "doi": "10.4064/aa169-1-3",
           "title": "On a conjecture of Sárközy and Szemerédi",
           "url": "https://doi.org/10.4064/aa169-1-3",
@@ -7435,19 +7329,6 @@
           ],
           "year": 2021,
           "venue": "European Journal of Mathematics",
-          "citationCount": 2,
-          "type": "journal-article"
-        },
-        {
-          "doi": "10.1112/plms.12591",
-          "title": "Logarithmic bounds on Fujita's conjecture",
-          "url": "https://doi.org/10.1112/plms.12591",
-          "authors": [
-            "Luca Ghidelli",
-            "Justin Lacini"
-          ],
-          "year": 2024,
-          "venue": "Proceedings of the London Mathematical Society",
           "citationCount": 2,
           "type": "journal-article"
         }
@@ -7923,20 +7804,6 @@
           "type": "journal-article"
         },
         {
-          "doi": "10.1090/s0002-9939-2015-12398-2",
-          "title": "Brannan’s conjecture and trigonometric sums",
-          "url": "https://doi.org/10.1090/s0002-9939-2015-12398-2",
-          "authors": [
-            "Roger Barnard",
-            "Udaya Jayatilake",
-            "Alexander Solynin"
-          ],
-          "year": 2015,
-          "venue": "Proceedings of the American Mathematical Society",
-          "citationCount": 12,
-          "type": "journal-article"
-        },
-        {
           "doi": "10.1007/978-3-319-50062-1_11",
           "title": "Effectiveness of Hindman’s Theorem for Bounded Sums",
           "url": "https://doi.org/10.1007/978-3-319-50062-1_11",
@@ -8160,18 +8027,6 @@
           "venue": "Combinatorica",
           "citationCount": 34,
           "type": "journal-article"
-        },
-        {
-          "doi": "10.1007/978-1-4613-8655-1_15",
-          "title": "A Higher Dimensional Mordell Conjecture",
-          "url": "https://doi.org/10.1007/978-1-4613-8655-1_15",
-          "authors": [
-            "Paul Vojta"
-          ],
-          "year": 1986,
-          "venue": "Arithmetic Geometry",
-          "citationCount": 23,
-          "type": "book-chapter"
         },
         {
           "doi": "10.1007/s00493-017-3773-y",
@@ -8987,7 +8842,7 @@
         },
         {
           "doi": "10.1016/j.disc.2017.04.003",
-          "title": "On Seymour’s Second Neighborhood conjecture of <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" id=\"mml1\" display=\"inline\" overflow=\"scroll\" altimg=\"si1.gif\"><mml:mi>m</mml:mi></mml:math>-free digraphs",
+          "title": "On Seymour’s Second Neighborhood conjecture of m -free digraphs",
           "url": "https://doi.org/10.1016/j.disc.2017.04.003",
           "authors": [
             "Hao Liang",
@@ -10981,18 +10836,6 @@
           "type": "journal-article"
         },
         {
-          "doi": "10.1007/s00039-005-0541-8",
-          "title": "Sharp concentration of random polytopes",
-          "url": "https://doi.org/10.1007/s00039-005-0541-8",
-          "authors": [
-            "V. H. Vu"
-          ],
-          "year": 2005,
-          "venue": "GAFA Geometric And Functional Analysis",
-          "citationCount": 41,
-          "type": "journal-article"
-        },
-        {
           "doi": "10.1239/jap/1032374639",
           "title": "The random triangle model",
           "url": "https://doi.org/10.1239/jap/1032374639",
@@ -11402,7 +11245,7 @@
         },
         {
           "doi": "10.1137/s0895480100365859",
-          "title": "A Lower Bound for Heilbronn's Triangle Problem in\n                    <i>d</i>\n                    Dimensions",
+          "title": "A Lower Bound for Heilbronn's Triangle Problem in d Dimensions",
           "url": "https://doi.org/10.1137/s0895480100365859",
           "authors": [
             "Gill Barequet"
@@ -12236,7 +12079,7 @@
         },
         {
           "doi": "10.1515/jgth-2016-0037",
-          "title": "The structure group of an <i>L</i>-algebra is torsion-free",
+          "title": "The structure group of an L -algebra is torsion-free",
           "url": "https://doi.org/10.1515/jgth-2016-0037",
           "authors": [
             "Wolfgang Rump"
@@ -12790,7 +12633,7 @@
         },
         {
           "doi": "10.1515/jgth-2016-0006",
-          "title": "The inductive Alperin–McKay and Blockwise Alperin Weight\nconditions for blocks with cyclic defect groups and odd primes",
+          "title": "The inductive Alperin–McKay and Blockwise Alperin Weight conditions for blocks with cyclic defect groups and odd primes",
           "url": "https://doi.org/10.1515/jgth-2016-0006",
           "authors": [
             "Shigeo Koshitani",
@@ -12868,7 +12711,7 @@
         },
         {
           "doi": "10.1142/s1005386717000086",
-          "title": "The Inductive Blockwise Alperin Weight Condition for PSL(3, <i>q</i>)",
+          "title": "The Inductive Blockwise Alperin Weight Condition for PSL(3, q )",
           "url": "https://doi.org/10.1142/s1005386717000086",
           "authors": [
             "Zhicheng Feng",
@@ -14408,7 +14251,7 @@
         },
         {
           "doi": "10.2140/apde.2022.15.727",
-          "title": "Benjamini–Schramm convergence and spectra of\nrandom hyperbolic surfaces of high genus",
+          "title": "Benjamini–Schramm convergence and spectra of random hyperbolic surfaces of high genus",
           "url": "https://doi.org/10.2140/apde.2022.15.727",
           "authors": [
             "Laura Monk"
@@ -17152,7 +16995,7 @@
         },
         {
           "doi": "10.1209/epl/i2003-10261-5",
-          "title": "On temperature chaos in Ising and\n                    <i>XY</i>\n                    spin glasses",
+          "title": "On temperature chaos in Ising and XY spin glasses",
           "url": "https://doi.org/10.1209/epl/i2003-10261-5",
           "authors": [
             "F Krzakała"
@@ -18158,7 +18001,7 @@
         },
         {
           "doi": "10.5802/aif.2484",
-          "title": "Diophantine Undecidability of Holomorphy Rings of Function Fields of Characteristic 0",
+          "title": "Diophantine Undecidability of Holomorphy Rings of Function Fields of Characteristic 0",
           "url": "https://doi.org/10.5802/aif.2484",
           "authors": [
             "Laurent Moret-Bailly",
@@ -18547,7 +18390,7 @@
         },
         {
           "doi": "10.1007/978-3-540-89439-1_35",
-          "title": "Weak βη-Normalization and Normalization by Evaluation for System F",
+          "title": "Weak βη-Normalization and Normalization by Evaluation for System F",
           "url": "https://doi.org/10.1007/978-3-540-89439-1_35",
           "authors": [
             "Andreas Abel"
@@ -19047,7 +18890,7 @@
         },
         {
           "doi": "10.1017/s0013091513000369",
-          "title": "Cohomological finiteness properties of the Brin–Thompson–Higman groups 2<i>V</i> and 3<i>V</i>",
+          "title": "Cohomological finiteness properties of the Brin–Thompson–Higman groups 2 V and 3 V",
           "url": "https://doi.org/10.1017/s0013091513000369",
           "authors": [
             "Dessislava H. Kochloukova",
@@ -23699,7 +23542,7 @@
         },
         {
           "doi": "10.1112/s0010437x16007673",
-          "title": "Rigidity of free product von Neumann algebras",
+          "title": "Rigidity of free product von Neumann algebras",
           "url": "https://doi.org/10.1112/s0010437x16007673",
           "authors": [
             "Cyril Houdayer",
@@ -24282,18 +24125,6 @@
           "venue": "Journal of Mathematical Analysis and Applications",
           "citationCount": 0,
           "type": "journal-article"
-        },
-        {
-          "doi": "10.1515/iupac.79.0566",
-          "title": "Relative Spectral Responsivity",
-          "url": "https://doi.org/10.1515/iupac.79.0566",
-          "authors": [
-            "S. E. Braslavsky"
-          ],
-          "year": 2016,
-          "venue": "IUPAC Standards Online",
-          "citationCount": 0,
-          "type": "dataset"
         }
       ]
     },
@@ -25607,7 +25438,7 @@
         },
         {
           "doi": "10.2140/apde.2023.16.1799",
-          "title": "A characterization of the Razak–Jacelon\nalgebra",
+          "title": "A characterization of the Razak–Jacelon algebra",
           "url": "https://doi.org/10.2140/apde.2023.16.1799",
           "authors": [
             "Norio Nawata"
@@ -25833,7 +25664,7 @@
         },
         {
           "doi": "10.1017/etds.2018.39",
-          "title": "Ideal structure and pure infiniteness of ample groupoid -algebras",
+          "title": "Ideal structure and pure infiniteness of ample groupoid -algebras",
           "url": "https://doi.org/10.1017/etds.2018.39",
           "authors": [
             "CHRISTIAN BÖNICKE",
@@ -26903,7 +26734,7 @@
         },
         {
           "doi": "10.1090/surv/217.1",
-          "title": "Homotopy of Operads and\n                    Grothendieck–Teichmüller Groups",
+          "title": "Homotopy of Operads and Grothendieck–Teichmüller Groups",
           "url": "https://doi.org/10.1090/surv/217.1",
           "authors": [
             "Benoit Fresse"
@@ -26928,7 +26759,7 @@
         },
         {
           "doi": "10.1090/surv/217.2",
-          "title": "Homotopy of Operads and\n                    Grothendieck–Teichmüller Groups",
+          "title": "Homotopy of Operads and Grothendieck–Teichmüller Groups",
           "url": "https://doi.org/10.1090/surv/217.2",
           "authors": [
             "Benoit Fresse"
@@ -27062,19 +26893,6 @@
           "year": 2015,
           "venue": "Journal of Pure and Applied Algebra",
           "citationCount": 19,
-          "type": "journal-article"
-        },
-        {
-          "doi": "10.18523/2617-7080i2018p38-48",
-          "title": "Finite local nearrings",
-          "url": "https://doi.org/10.18523/2617-7080i2018p38-48",
-          "authors": [
-            "Iryna Raievska",
-            "Maryna Raievska"
-          ],
-          "year": 2018,
-          "venue": "Mohyla Mathematical Journal",
-          "citationCount": 12,
           "type": "journal-article"
         },
         {
@@ -28066,7 +27884,7 @@
       "papers": [
         {
           "doi": "10.2989/16073606.2020.1783010",
-          "title": "A note on Tingley’s problem and Wigner’s theorem in the unit sphere of <sup>∞</sup>(Γ)-type spaces",
+          "title": "A note on Tingley’s problem and Wigner’s theorem in the unit sphere of ∞ (Γ)-type spaces",
           "url": "https://doi.org/10.2989/16073606.2020.1783010",
           "authors": [
             "Dongni Tan",
@@ -28376,70 +28194,6 @@
       "candidatesScanned": 20,
       "papers": [
         {
-          "doi": "10.1137/s0097539792229507",
-          "title": "Graph Decomposition is NP-Complete: A Complete Proof of Holyer's Conjecture",
-          "url": "https://doi.org/10.1137/s0097539792229507",
-          "authors": [
-            "Dorit Dor",
-            "Michael Tarsi"
-          ],
-          "year": 1997,
-          "venue": "SIAM Journal on Computing",
-          "citationCount": 84,
-          "type": "journal-article"
-        },
-        {
-          "doi": "10.1016/j.aim.2017.11.017",
-          "title": "The Crepant Transformation Conjecture for toric complete intersections",
-          "url": "https://doi.org/10.1016/j.aim.2017.11.017",
-          "authors": [
-            "Tom Coates",
-            "Hiroshi Iritani",
-            "Yunfeng Jiang"
-          ],
-          "year": 2018,
-          "venue": "Advances in Mathematics",
-          "citationCount": 34,
-          "type": "journal-article"
-        },
-        {
-          "doi": "10.1023/a:1004640317274",
-          "title": "Spouge's Conjecture on Complete and Instantaneous Gelation",
-          "url": "https://doi.org/10.1023/a:1004640317274",
-          "authors": [
-            "Intae Jeon"
-          ],
-          "year": 1999,
-          "venue": "Journal of Statistical Physics",
-          "citationCount": 13,
-          "type": "journal-article"
-        },
-        {
-          "doi": "10.1007/bf02568334",
-          "title": "Monomial conjecture and complete intersections",
-          "url": "https://doi.org/10.1007/bf02568334",
-          "authors": [
-            "Jan R. Strooker",
-            "Jurgen Stückrad"
-          ],
-          "year": 1993,
-          "venue": "manuscripta mathematica",
-          "citationCount": 11,
-          "type": "journal-article"
-        },
-        {
-          "doi": "10.1016/j.jalgebra.2011.05.003",
-          "title": "The Zariski–Lipman conjecture for complete intersections",
-          "url": "https://doi.org/10.1016/j.jalgebra.2011.05.003",
-          "authors": [
-            "Rolf Källström"
-          ],
-          "year": 2011,
-          "venue": "Journal of Algebra",
-          "citationCount": 11,
-          "type": "journal-article"
-        },
-        {
           "doi": "10.1007/s00211-009-0212-z",
           "title": "Crouzeix–Raviart boundary elements",
           "url": "https://doi.org/10.1007/s00211-009-0212-z",
@@ -28450,33 +28204,6 @@
           "year": 2009,
           "venue": "Numerische Mathematik",
           "citationCount": 10,
-          "type": "journal-article"
-        },
-        {
-          "doi": "10.1016/j.ejor.2008.12.010",
-          "title": "Complete solution to a conjecture on Randić index",
-          "url": "https://doi.org/10.1016/j.ejor.2008.12.010",
-          "authors": [
-            "Xueliang Li",
-            "Bolian Liu",
-            "Jianxi Liu"
-          ],
-          "year": 2010,
-          "venue": "European Journal of Operational Research",
-          "citationCount": 8,
-          "type": "journal-article"
-        },
-        {
-          "doi": "10.1016/j.ejc.2018.10.002",
-          "title": "The bunkbed conjecture on the complete graph",
-          "url": "https://doi.org/10.1016/j.ejc.2018.10.002",
-          "authors": [
-            "Peter van Hintum",
-            "Piet Lammers"
-          ],
-          "year": 2019,
-          "venue": "European Journal of Combinatorics",
-          "citationCount": 6,
           "type": "journal-article"
         },
         {
@@ -29311,7 +29038,7 @@
         },
         {
           "doi": "10.2478/agms-2013-0003",
-          "title": "Spectral Calculus and Lipschitz Extension for\nBarycentric Metric Spaces",
+          "title": "Spectral Calculus and Lipschitz Extension for Barycentric Metric Spaces",
           "url": "https://doi.org/10.2478/agms-2013-0003",
           "authors": [
             "Manor Mendel",
@@ -29621,7 +29348,7 @@
         },
         {
           "doi": "10.1070/sm1997v188n01abeh000184",
-          "title": "Geometry of the Grassmann image of a local isometric immersion of Lobachevskii\n                    <i>n</i>\n                    -dimensional isometric immersion of Lobachevskii\n                    <i>n</i>\n                    -dimensional",
+          "title": "Geometry of the Grassmann image of a local isometric immersion of Lobachevskii n -dimensional isometric immersion of Lobachevskii n -dimensional",
           "url": "https://doi.org/10.1070/sm1997v188n01abeh000184",
           "authors": [
             "Yu A Aminov"
@@ -30063,18 +29790,6 @@
           "year": 1991,
           "venue": "Mathematische Zeitschrift",
           "citationCount": 10,
-          "type": "journal-article"
-        },
-        {
-          "doi": "10.1090/s1056-3911-05-00410-8",
-          "title": "Toric residue mirror conjecture for Calabi-Yau complete intersections",
-          "url": "https://doi.org/10.1090/s1056-3911-05-00410-8",
-          "authors": [
-            "Kalle Karu"
-          ],
-          "year": 2005,
-          "venue": "Journal of Algebraic Geometry",
-          "citationCount": 8,
           "type": "journal-article"
         },
         {
@@ -30758,7 +30473,7 @@
         },
         {
           "doi": "10.1112/s0010437x12000826",
-          "title": "Ellipsoid embeddings and symplectic packing stability",
+          "title": "Ellipsoid embeddings and symplectic packing stability",
           "url": "https://doi.org/10.1112/s0010437x12000826",
           "authors": [
             "O. Buse",
@@ -31956,7 +31671,7 @@
         },
         {
           "doi": "10.1016/j.jde.2020.05.048",
-          "title": "Bernstein problem of affine maximal type hypersurfaces on dimension N ≥ 3",
+          "title": "Bernstein problem of affine maximal type hypersurfaces on dimension N ≥ 3",
           "url": "https://doi.org/10.1016/j.jde.2020.05.048",
           "authors": [
             "Shi-Zhong Du"
@@ -33925,7 +33640,7 @@
         },
         {
           "doi": "10.1137/s009753979631391x",
-          "title": "Approximation Algorithms for the Orthogonal\n                    <i>Z</i>\n                    -Oriented Three-Dimensional Packing Problem",
+          "title": "Approximation Algorithms for the Orthogonal Z -Oriented Three-Dimensional Packing Problem",
           "url": "https://doi.org/10.1137/s009753979631391x",
           "authors": [
             "F. K. Miyazawa",
@@ -33967,21 +33682,6 @@
           "type": "journal-article"
         },
         {
-          "doi": "10.1002/(sici)1097-0207(19990910)46:1<117::aid-nme670>3.0.co;2-j",
-          "title": "Three-dimensional magnetostatic problem",
-          "url": "https://doi.org/10.1002/(sici)1097-0207(19990910)46:1<117::aid-nme670>3.0.co;2-j",
-          "authors": [
-            "B. Bandelier",
-            "C. Daveau",
-            "J. Laminie",
-            "S. M. Mefire"
-          ],
-          "year": 1999,
-          "venue": "International Journal for Numerical Methods in Engineering",
-          "citationCount": 5,
-          "type": "journal-article"
-        },
-        {
           "doi": "10.1007/s00209-013-1203-4",
           "title": "A three dimensional ball quotient",
           "url": "https://doi.org/10.1007/s00209-013-1203-4",
@@ -34003,21 +33703,6 @@
           ],
           "year": 2025,
           "venue": "Journal of Mathematical Sciences",
-          "citationCount": 1,
-          "type": "journal-article"
-        },
-        {
-          "doi": "10.1002/(sici)1097-0207(19990910)46:1<117::aid-nme670>3.3.co;2-a",
-          "title": "Three‐dimensional magnetostatic problem",
-          "url": "https://doi.org/10.1002/(sici)1097-0207(19990910)46:1<117::aid-nme670>3.3.co;2-a",
-          "authors": [
-            "B. Bandelier",
-            "C. Daveau",
-            "J. Laminie",
-            "S. M. Mefire"
-          ],
-          "year": 1999,
-          "venue": "International Journal for Numerical Methods in Engineering",
           "citationCount": 1,
           "type": "journal-article"
         }
@@ -36709,26 +36394,6 @@
           "type": "posted-content"
         },
         {
-          "doi": "10.3840/07001361",
-          "title": "Goldbach Conjecture",
-          "url": "https://doi.org/10.3840/07001361",
-          "authors": [],
-          "year": 2007,
-          "venue": "Wolfram Demonstrations Project",
-          "citationCount": 0,
-          "type": "dataset"
-        },
-        {
-          "doi": "10.3840/001361",
-          "title": "Goldbach Conjecture",
-          "url": "https://doi.org/10.3840/001361",
-          "authors": [],
-          "year": 2007,
-          "venue": "Wolfram Demonstrations Project",
-          "citationCount": 0,
-          "type": "dataset"
-        },
-        {
           "doi": "10.1515/crll.1977.292.1",
           "title": "Goldbach conjecture.",
           "url": "https://doi.org/10.1515/crll.1977.292.1",
@@ -36749,30 +36414,6 @@
           "venue": "",
           "citationCount": 0,
           "type": "posted-content"
-        },
-        {
-          "doi": "10.32388/8lxunp",
-          "title": "Review of: \"Ternary Goldbach Conjecture implies Strong Goldbach Conjecture\"",
-          "url": "https://doi.org/10.32388/8lxunp",
-          "authors": [
-            "Bill Riemers"
-          ],
-          "year": 2026,
-          "venue": "",
-          "citationCount": 0,
-          "type": "peer-review"
-        },
-        {
-          "doi": "10.32388/uc1kse",
-          "title": "Review of: \"Ternary Goldbach Conjecture implies Strong Goldbach Conjecture\"",
-          "url": "https://doi.org/10.32388/uc1kse",
-          "authors": [
-            "Bill Riemers"
-          ],
-          "year": 2026,
-          "venue": "",
-          "citationCount": 0,
-          "type": "peer-review"
         },
         {
           "doi": "10.15580/gjsetr.2014.2.030614133",
@@ -37116,7 +36757,7 @@
         },
         {
           "doi": "10.2140/ant.2019.13.1069",
-          "title": "On the Brauer–Siegel ratio for abelian varieties\nover function fields",
+          "title": "On the Brauer–Siegel ratio for abelian varieties over function fields",
           "url": "https://doi.org/10.2140/ant.2019.13.1069",
           "authors": [
             "Douglas Ulmer"
@@ -37141,7 +36782,7 @@
         },
         {
           "doi": "10.2140/ant.2018.12.1749",
-          "title": "A dynamical variant of the Pink–Zilber\nconjecture",
+          "title": "A dynamical variant of the Pink–Zilber conjecture",
           "url": "https://doi.org/10.2140/ant.2018.12.1749",
           "authors": [
             "Dragos Ghioca",
@@ -37374,7 +37015,7 @@
         },
         {
           "doi": "10.1090/s0025-5718-03-01586-2",
-          "title": "Stark's conjecture over  complex cubic number fields",
+          "title": "Stark's conjecture over complex cubic number fields",
           "url": "https://doi.org/10.1090/s0025-5718-03-01586-2",
           "authors": [
             "David S. Dummit",
@@ -37457,7 +37098,7 @@
         },
         {
           "doi": "10.1112/s0010437x09004436",
-          "title": "On the birational\n                    <i>p</i>\n                    -adic section conjecture",
+          "title": "On the birational p -adic section conjecture",
           "url": "https://doi.org/10.1112/s0010437x09004436",
           "authors": [
             "Florian Pop"
@@ -37494,7 +37135,7 @@
         },
         {
           "doi": "10.1112/s0010437x1700714x",
-          "title": "The  metabelian birational -adic section conjecture for varieties",
+          "title": "The metabelian birational -adic section conjecture for varieties",
           "url": "https://doi.org/10.1112/s0010437x1700714x",
           "authors": [
             "Florian Pop"
@@ -37531,7 +37172,7 @@
         },
         {
           "doi": "10.2140/pjm.2024.333.331",
-          "title": "Vogan’s conjecture on local Arthur packets of\np-adic GLn and a combinatorial lemma",
+          "title": "Vogan’s conjecture on local Arthur packets of p-adic GLn and a combinatorial lemma",
           "url": "https://doi.org/10.2140/pjm.2024.333.331",
           "authors": [
             "Chi-Heng Lo"
@@ -37858,7 +37499,7 @@
         },
         {
           "doi": "10.1112/s0025579300012900",
-          "title": "The\n            <i>k</i>\n            ‐dimensional Duffin and Schaeffer conjecture",
+          "title": "The k ‐dimensional Duffin and Schaeffer conjecture",
           "url": "https://doi.org/10.1112/s0025579300012900",
           "authors": [
             "A. D. Pollington",
@@ -38216,16 +37857,6 @@
           "venue": "Informatics in Education",
           "citationCount": 1,
           "type": "journal-article"
-        },
-        {
-          "doi": "10.3840/001635",
-          "title": "Egyptian Fractions",
-          "url": "https://doi.org/10.3840/001635",
-          "authors": [],
-          "year": 2007,
-          "venue": "Wolfram Demonstrations Project",
-          "citationCount": 0,
-          "type": "dataset"
         }
       ]
     },
@@ -38528,7 +38159,7 @@
         },
         {
           "doi": "10.30757/alea.v16-18",
-          "title": "Connection probabilities in Poisson random graphs\nwith uniformly bounded edges",
+          "title": "Connection probabilities in Poisson random graphs with uniformly bounded edges",
           "url": "https://doi.org/10.30757/alea.v16-18",
           "authors": [
             "Alessandra Faggionato",
@@ -38651,7 +38282,7 @@
         },
         {
           "doi": "10.1007/s41478-024-00727-2",
-          "title": "On the distribution of consecutive (k, r)-integer primitive roots modulo p",
+          "title": "On the distribution of consecutive (k, r)-integer primitive roots modulo p",
           "url": "https://doi.org/10.1007/s41478-024-00727-2",
           "authors": [
             "Sunanta Srisopha",
@@ -42365,7 +41996,7 @@
         },
         {
           "doi": "10.1007/978-3-031-82670-2_22",
-          "title": "Forest Covers and Bounded Forest Covers",
+          "title": "Forest Covers and Bounded Forest Covers",
           "url": "https://doi.org/10.1007/978-3-031-82670-2_22",
           "authors": [
             "Daya Ram Gaur",
@@ -43039,7 +42670,7 @@
         },
         {
           "doi": "10.2140/pjm.2017.291.359",
-          "title": "Uniform stable radius, Lê numbers and\ntopological triviality for line singularities",
+          "title": "Uniform stable radius, Lê numbers and topological triviality for line singularities",
           "url": "https://doi.org/10.2140/pjm.2017.291.359",
           "authors": [
             "Christophe Eyral"
@@ -46115,7 +45746,7 @@
         },
         {
           "doi": "10.1007/978-3-031-15914-5_21",
-          "title": "Bounding Twin-Width for Bounded-Treewidth Graphs, Planar Graphs, and Bipartite Graphs",
+          "title": "Bounding Twin-Width for Bounded-Treewidth Graphs, Planar Graphs, and Bipartite Graphs",
           "url": "https://doi.org/10.1007/978-3-031-15914-5_21",
           "authors": [
             "Hugo Jacob",

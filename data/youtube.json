@@ -118,14 +118,6 @@
       "candidatesScanned": 15,
       "videos": [
         {
-          "id": "525Dwouk7a8",
-          "title": "Arithmetic Progression (AP), find the 1st, 10th and nth term.",
-          "url": "https://www.youtube.com/watch?v=525Dwouk7a8",
-          "channel": "Jacob Sichamba Online Math",
-          "viewCount": 491439,
-          "duration": 427
-        },
-        {
           "id": "jZFuuXJPvFI",
           "title": "OpenAI Just Broke Matrix Multiplication. Why 2.25 Matters",
           "url": "https://www.youtube.com/watch?v=jZFuuXJPvFI",
@@ -140,14 +132,6 @@
           "channel": "Binary Verse AI",
           "viewCount": 11564,
           "duration": 1168
-        },
-        {
-          "id": "1H7LKudhQlM",
-          "title": "AI Solved a Math Problem Humans Couldn't for 36 Years",
-          "url": "https://www.youtube.com/watch?v=1H7LKudhQlM",
-          "channel": "HexaValuation",
-          "viewCount": 461,
-          "duration": 560
         },
         {
           "id": "diyPngxZY5s",
@@ -218,14 +202,6 @@
           "channel": "Binary Verse AI",
           "viewCount": 756,
           "duration": 1113
-        },
-        {
-          "id": "0QesoEEFZWw",
-          "title": "Boolean Circuits: Inside OpenAI’s Proof of a Stronger Depth Three Lower Bound",
-          "url": "https://www.youtube.com/watch?v=0QesoEEFZWw",
-          "channel": "Binary Verse AI",
-          "viewCount": 394,
-          "duration": 1119
         },
         {
           "id": "743PJXSeAB0",
@@ -347,14 +323,6 @@
           "channel": "Binary Verse AI",
           "viewCount": 172,
           "duration": 1096
-        },
-        {
-          "id": "7lQ2AJEJ3SI",
-          "title": "PCP for PPAD Conjecture: Why Broken Gates Cannot Hide an Answer",
-          "url": "https://www.youtube.com/watch?v=7lQ2AJEJ3SI",
-          "channel": "Binary Verse AI",
-          "viewCount": 117,
-          "duration": 1143
         }
       ]
     },
@@ -464,14 +432,6 @@
       "query": "Almost-linear-time exact matching and prescribed-degree factors in general graphs Theoretical computer science mathematics",
       "candidatesScanned": 14,
       "videos": [
-        {
-          "id": "t9gErvSVid0",
-          "title": "Lec-14: Linear Search in Data Structure by #Naina Mam | Time Complexity",
-          "url": "https://www.youtube.com/watch?v=t9gErvSVid0",
-          "channel": "Gate Smashers",
-          "viewCount": 553299,
-          "duration": 748
-        },
         {
           "id": "nlcKsR-4NgA",
           "title": "Maximum Matching in Almost-Linear Time? An AI Claims to Beat Micali–Vazirani",
@@ -746,14 +706,6 @@
           "channel": "Institute for Advanced Study",
           "viewCount": 591,
           "duration": 3810
-        },
-        {
-          "id": "3M0nYYhYx14",
-          "title": "Session 9B - Fooling Gaussian PTFs via Local Hyperconcentration",
-          "url": "https://www.youtube.com/watch?v=3M0nYYhYx14",
-          "channel": "Association for Computing Machinery (ACM)",
-          "viewCount": 466,
-          "duration": 1032
         },
         {
           "id": "NgSFVdbxZvU",
@@ -1099,14 +1051,6 @@
       "candidatesScanned": 3,
       "videos": [
         {
-          "id": "taj1zop8rFs",
-          "title": "Standard Map Chaos: How OpenAI Proved Chaotic Motion Occupies Positive Area",
-          "url": "https://www.youtube.com/watch?v=taj1zop8rFs",
-          "channel": "Binary Verse AI",
-          "viewCount": 420,
-          "duration": 1085
-        },
-        {
           "id": "O0Qg4jKyUZ8",
           "title": "Log Concave Sampling: How OpenAI Proved Subpolynomial Query Complexity",
           "url": "https://www.youtube.com/watch?v=O0Qg4jKyUZ8",
@@ -1173,28 +1117,12 @@
           "duration": 1272
         },
         {
-          "id": "nclaiAgEugw",
-          "title": "Gaussian Moat Conjecture: How OpenAI’s Proof Solves the 64 Year Walk to Infinity Mystery",
-          "url": "https://www.youtube.com/watch?v=nclaiAgEugw",
-          "channel": "Binary Verse AI",
-          "viewCount": 790,
-          "duration": 1117
-        },
-        {
           "id": "_Akd9lvmqu4",
           "title": "Factorization and Ramanujan Tau Function by Kumar Murty",
           "url": "https://www.youtube.com/watch?v=_Akd9lvmqu4",
           "channel": "matsciencechannel",
           "viewCount": 172,
           "duration": 1676
-        },
-        {
-          "id": "rX039w0OF1Q",
-          "title": "Speed Limits I: Multiplying, Transforming, Factoring",
-          "url": "https://www.youtube.com/watch?v=rX039w0OF1Q",
-          "channel": "Sankalp Thakur",
-          "viewCount": 3,
-          "duration": 3131
         }
       ]
     },
@@ -1403,14 +1331,6 @@
           "duration": 1146
         },
         {
-          "id": "K43csA2Z5q4",
-          "title": "Every OpenAI Math Result, Part 2 of 4: PCP for PPAD, Birkhoff Conjecture and 82 More | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=K43csA2Z5q4",
-          "channel": "Gradient Damage",
-          "viewCount": 16,
-          "duration": 1751
-        },
-        {
           "id": "yGLzt19Iw34",
           "title": "Borsuk's Conjecture Fails in Dimension 9, Sidorenko's Conjecture and 8 More | OpenAI Math",
           "url": "https://www.youtube.com/watch?v=yGLzt19Iw34",
@@ -1444,14 +1364,6 @@
           "channel": "Binary Verse AI",
           "viewCount": 1214,
           "duration": 1064
-        },
-        {
-          "id": "WsgPFhfJL3M",
-          "title": "The Scariest Alien We've Ever Met Was Built in a Lab",
-          "url": "https://www.youtube.com/watch?v=WsgPFhfJL3M",
-          "channel": "Sleeping Space Door",
-          "viewCount": 20,
-          "duration": 1050
         }
       ]
     },
@@ -1548,28 +1460,12 @@
           "duration": 1098
         },
         {
-          "id": "K43csA2Z5q4",
-          "title": "Every OpenAI Math Result, Part 2 of 4: PCP for PPAD, Birkhoff Conjecture and 82 More | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=K43csA2Z5q4",
-          "channel": "Gradient Damage",
-          "viewCount": 16,
-          "duration": 1751
-        },
-        {
           "id": "HbGXg1kfEhQ",
           "title": "Hindman’s Conjecture Proved? AI Claims Sums and Products That Always Share a Colour",
           "url": "https://www.youtube.com/watch?v=HbGXg1kfEhQ",
           "channel": "AI Proved What?",
           "viewCount": 12,
           "duration": 343
-        },
-        {
-          "id": "yGLzt19Iw34",
-          "title": "Borsuk's Conjecture Fails in Dimension 9, Sidorenko's Conjecture and 8 More | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=yGLzt19Iw34",
-          "channel": "Gradient Damage",
-          "viewCount": 8,
-          "duration": 208
         }
       ]
     },
@@ -1662,14 +1558,6 @@
           "duration": 2144
         },
         {
-          "id": "0Let6mETMwQ",
-          "title": "The New Era of Mathematical Discovery Driven by OpenAI Frontier Reasoning Models",
-          "url": "https://www.youtube.com/watch?v=0Let6mETMwQ",
-          "channel": "Breakthroughs",
-          "viewCount": 63,
-          "duration": 102
-        },
-        {
           "id": "9azjp6cU070",
           "title": "Almost Every Point Sees Nearly n Distances? AI Claims Two Erdős Distance Results in the Plane",
           "url": "https://www.youtube.com/watch?v=9azjp6cU070",
@@ -1706,14 +1594,6 @@
           "channel": "Sebi Cioaba",
           "viewCount": 192,
           "duration": 3117
-        },
-        {
-          "id": "vXWKX3SgOT0",
-          "title": "The universal valuation of Coxeter matroids (Mariel Supina)",
-          "url": "https://www.youtube.com/watch?v=vXWKX3SgOT0",
-          "channel": "UMass Discrete Math",
-          "viewCount": 112,
-          "duration": 2238
         },
         {
           "id": "wyUhVjvF0sI",
@@ -1913,28 +1793,12 @@
       "candidatesScanned": 3,
       "videos": [
         {
-          "id": "K43csA2Z5q4",
-          "title": "Every OpenAI Math Result, Part 2 of 4: PCP for PPAD, Birkhoff Conjecture and 82 More | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=K43csA2Z5q4",
-          "channel": "Gradient Damage",
-          "viewCount": 16,
-          "duration": 1751
-        },
-        {
           "id": "MnaB8_SowRE",
           "title": "No Bottlenecks at Any Level: AI Claims Bounded-Degree Coboundary Expanders in Every Dimension",
           "url": "https://www.youtube.com/watch?v=MnaB8_SowRE",
           "channel": "AI Proved What?",
           "viewCount": 7,
           "duration": 413
-        },
-        {
-          "id": "Fq_shNv8jrE",
-          "title": "Circulant Hadamard Conjecture, Cycle–Clique Ramsey Numbers and 7 More in Combinatorics | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=Fq_shNv8jrE",
-          "channel": "Gradient Damage",
-          "viewCount": 2,
-          "duration": 187
         }
       ]
     },
@@ -1992,14 +1856,6 @@
       "query": "The Erdős–Gallai cycle-decomposition conjecture Combinatorics mathematics",
       "candidatesScanned": 5,
       "videos": [
-        {
-          "id": "K8DPtOCMj7I",
-          "title": "From Robust Sublinear Expanders to Additive Number Theory via Rainbow Cycles - Matija Bucic",
-          "url": "https://www.youtube.com/watch?v=K8DPtOCMj7I",
-          "channel": "Institute for Advanced Study",
-          "viewCount": 785,
-          "duration": 7331
-        },
         {
           "id": "wxaNN9BrsGQ",
           "title": "Every Graph in C·n Cycles and Edges? AI Claims the Erdős–Gallai Cycle Decomposition Conjecture",
@@ -2142,14 +1998,6 @@
       "candidatesScanned": 6,
       "videos": [
         {
-          "id": "6Tz3kgHKZ_s",
-          "title": "Every OpenAI Math Result, Part 4 of 4: L = BPL, Integer Multiplication and 82 More | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=6Tz3kgHKZ_s",
-          "channel": "Gradient Damage",
-          "viewCount": 30,
-          "duration": 1751
-        },
-        {
           "id": "HSgwHaO8LHw",
           "title": "No Polynomial Bound? AI Claims One 66×66 Pattern Breaks Removal for Ordered 0-1 Matrices",
           "url": "https://www.youtube.com/watch?v=HSgwHaO8LHw",
@@ -2254,14 +2102,6 @@
           "duration": 744
         },
         {
-          "id": "K43csA2Z5q4",
-          "title": "Every OpenAI Math Result, Part 2 of 4: PCP for PPAD, Birkhoff Conjecture and 82 More | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=K43csA2Z5q4",
-          "channel": "Gradient Damage",
-          "viewCount": 16,
-          "duration": 1751
-        },
-        {
           "id": "M-Pnfbhfz_I",
           "title": "Serre's Multiplicity Conjecture, Kaplansky Zero-Divisor Conjecture and 8 More | OpenAI Math",
           "url": "https://www.youtube.com/watch?v=M-Pnfbhfz_I",
@@ -2283,14 +2123,6 @@
       "query": "A counterexample to the small Cohen–Macaulay module conjecture Algebra mathematics",
       "candidatesScanned": 3,
       "videos": [
-        {
-          "id": "M-Pnfbhfz_I",
-          "title": "Serre's Multiplicity Conjecture, Kaplansky Zero-Divisor Conjecture and 8 More | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=M-Pnfbhfz_I",
-          "channel": "Gradient Damage",
-          "viewCount": 14,
-          "duration": 211
-        },
         {
           "id": "RYevatYf6hQ",
           "title": "No Finite Repair? AI Claims a Counterexample to Hochster’s Small Cohen–Macaulay Module Conjecture",
@@ -3078,16 +2910,7 @@
     "254": {
       "query": "Classifying spaces and geometric obstructions for Artin groups Group theory mathematics",
       "candidatesScanned": 15,
-      "videos": [
-        {
-          "id": "QG6uCBpwK0Y",
-          "title": "Stephen Vaes, W*-rigidity paradigms for embeddings of II_1 factors",
-          "url": "https://www.youtube.com/watch?v=QG6uCBpwK0Y",
-          "channel": "Global Noncommutative Geometry Seminar",
-          "viewCount": 184,
-          "duration": 3489
-        }
-      ]
+      "videos": []
     },
     "255": {
       "query": "Quasi-isometric recognition of virtually polycyclic groups Group theory mathematics",
@@ -3106,16 +2929,7 @@
     "256": {
       "query": "Nonsingular systems of equations over arbitrary groups Group theory mathematics",
       "candidatesScanned": 15,
-      "videos": [
-        {
-          "id": "Nko2lbnRdu4",
-          "title": "02. 16/01/2023 Seidon Alsaody (Uppsala University, Sweden)",
-          "url": "https://www.youtube.com/watch?v=Nko2lbnRdu4",
-          "channel": "European Non-Associative Algebra Seminar",
-          "viewCount": 372,
-          "duration": 3873
-        }
-      ]
+      "videos": []
     },
     "257": {
       "query": "A hyperbolic group without a geometric CAT(0) action Group theory mathematics",
@@ -3640,14 +3454,6 @@
           "duration": 1005
         },
         {
-          "id": "1mTRamHC-HI",
-          "title": "OpenAI’s 722 Math Papers: 10 + 1 Real-World Connections",
-          "url": "https://www.youtube.com/watch?v=1mTRamHC-HI",
-          "channel": "Models, Molecules & Machines",
-          "viewCount": 18,
-          "duration": 644
-        },
-        {
           "id": "eAYYw5ojTPU",
           "title": "Factoring With No Gamble, Proved at Last? AI Claims Exact Quantum Factoring on a Fixed Gate Set",
           "url": "https://www.youtube.com/watch?v=eAYYw5ojTPU",
@@ -3745,14 +3551,6 @@
       "query": "From scale symmetry to local conformal symmetry in four-dimensional QFT Mathematical physics mathematics",
       "candidatesScanned": 15,
       "videos": [
-        {
-          "id": "VBBhlwmZFcs",
-          "title": "Fixed Points and Anomalous Dimensions - QFT II, Part 29",
-          "url": "https://www.youtube.com/watch?v=VBBhlwmZFcs",
-          "channel": "Instituto de Física Teórica, IFT-UNESP",
-          "viewCount": 925,
-          "duration": 1861
-        },
         {
           "id": "HPoilGRqdk4",
           "title": "Global chiral symmetry, extra dimensions, and topology (Lecture - 02) by David B  Kaplan",
@@ -3909,14 +3707,6 @@
           "channel": "Binary Verse AI",
           "viewCount": 778,
           "duration": 1116
-        },
-        {
-          "id": "VeyKq2LWzjg",
-          "title": "FPT: 22. von Neuman Algebras and Free Group Factor(s)",
-          "url": "https://www.youtube.com/watch?v=VeyKq2LWzjg",
-          "channel": "Roland Speicher",
-          "viewCount": 184,
-          "duration": 5350
         },
         {
           "id": "2i4cif5e10w",
@@ -4099,28 +3889,12 @@
       "candidatesScanned": 11,
       "videos": [
         {
-          "id": "xQ6WSNT-YIQ",
-          "title": "Phillips–Toms Conjecture: How OpenAI Proved the One Half Formula",
-          "url": "https://www.youtube.com/watch?v=xQ6WSNT-YIQ",
-          "channel": "Binary Verse AI",
-          "viewCount": 250,
-          "duration": 1073
-        },
-        {
           "id": "uP5BDEV1Ad4",
           "title": "Paul Herstedt (Ben Gurion University of the Negev), \"Mean cohomological independence dimension\"",
           "url": "https://www.youtube.com/watch?v=uP5BDEV1Ad4",
           "channel": "Dynamical Systems IMPAN",
           "viewCount": 54,
           "duration": 4521
-        },
-        {
-          "id": "6Tz3kgHKZ_s",
-          "title": "Every OpenAI Math Result, Part 4 of 4: L = BPL, Integer Multiplication and 82 More | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=6Tz3kgHKZ_s",
-          "channel": "Gradient Damage",
-          "viewCount": 30,
-          "duration": 1751
         },
         {
           "id": "On_qaGcGyxw",
@@ -4195,22 +3969,6 @@
       "candidatesScanned": 4,
       "videos": [
         {
-          "id": "BmxuC-w_IQA",
-          "title": "Kervaire Invariant Problem at Prime 3, The Grothendieck Homotopy Hypothesis and 8 More | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=BmxuC-w_IQA",
-          "channel": "Gradient Damage",
-          "viewCount": 20,
-          "duration": 210
-        },
-        {
-          "id": "lckiipi69OY",
-          "title": "Every OpenAI Math Result, Part 3 of 4: Operator Paving, Naimark's Problem and 82 More | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=lckiipi69OY",
-          "channel": "Gradient Damage",
-          "viewCount": 17,
-          "duration": 1760
-        },
-        {
           "id": "ET_r8URJpOo",
           "title": "Never the Same Twice? AI Claims the Purely Cosmetic Surgery Conjecture for Knots",
           "url": "https://www.youtube.com/watch?v=ET_r8URJpOo",
@@ -4250,14 +4008,6 @@
           "channel": "Gradient Damage",
           "viewCount": 20,
           "duration": 210
-        },
-        {
-          "id": "lckiipi69OY",
-          "title": "Every OpenAI Math Result, Part 3 of 4: Operator Paving, Naimark's Problem and 82 More | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=lckiipi69OY",
-          "channel": "Gradient Damage",
-          "viewCount": 17,
-          "duration": 1760
         },
         {
           "id": "e1Zl1g48dTs",
@@ -4306,14 +4056,6 @@
           "channel": "International Centre for Theoretical Sciences",
           "viewCount": 356,
           "duration": 3997
-        },
-        {
-          "id": "fwJ_PkBSQBw",
-          "title": "Topological models of infinity-groupoids - David Martínez Carpena",
-          "url": "https://www.youtube.com/watch?v=fwJ_PkBSQBw",
-          "channel": "Seminari SIMBa",
-          "viewCount": 325,
-          "duration": 1966
         },
         {
           "id": "xuuk-ofZxII",
@@ -4404,22 +4146,6 @@
           "channel": "UMD Mathematics",
           "viewCount": 284,
           "duration": 3678
-        },
-        {
-          "id": "0PUBHEoMLN4",
-          "title": "J. Wu: The Novikov conjecture and C*-algebras of infinite dimensional nonpositively curved spaces",
-          "url": "https://www.youtube.com/watch?v=0PUBHEoMLN4",
-          "channel": "Global Noncommutative Geometry Seminar",
-          "viewCount": 201,
-          "duration": 3806
-        },
-        {
-          "id": "BmxuC-w_IQA",
-          "title": "Kervaire Invariant Problem at Prime 3, The Grothendieck Homotopy Hypothesis and 8 More | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=BmxuC-w_IQA",
-          "channel": "Gradient Damage",
-          "viewCount": 20,
-          "duration": 210
         },
         {
           "id": "BsAWVBImmVE",
@@ -4544,14 +4270,6 @@
       "candidatesScanned": 5,
       "videos": [
         {
-          "id": "6Tz3kgHKZ_s",
-          "title": "Every OpenAI Math Result, Part 4 of 4: L = BPL, Integer Multiplication and 82 More | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=6Tz3kgHKZ_s",
-          "channel": "Gradient Damage",
-          "viewCount": 30,
-          "duration": 1751
-        },
-        {
           "id": "uASZQw8c_xg",
           "title": "Tingley's Problem, Separable Quotient Problem and 8 More in Functional Analysis | OpenAI Math",
           "url": "https://www.youtube.com/watch?v=uASZQw8c_xg",
@@ -4618,16 +4336,7 @@
     "326": {
       "query": "The cotype–cotype conjecture under the approximation property Functional analysis mathematics",
       "candidatesScanned": 2,
-      "videos": [
-        {
-          "id": "uASZQw8c_xg",
-          "title": "Tingley's Problem, Separable Quotient Problem and 8 More in Functional Analysis | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=uASZQw8c_xg",
-          "channel": "Gradient Damage",
-          "viewCount": 7,
-          "duration": 209
-        }
-      ]
+      "videos": []
     },
     "327": {
       "query": "Markov type characterizes superreflexivity Functional analysis mathematics",
@@ -4722,29 +4431,12 @@
     "333": {
       "query": "Smooth isometric immersions of surfaces into ℝ^4 Differential geometry mathematics",
       "candidatesScanned": 7,
-      "videos": [
-        {
-          "id": "6Tz3kgHKZ_s",
-          "title": "Every OpenAI Math Result, Part 4 of 4: L = BPL, Integer Multiplication and 82 More | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=6Tz3kgHKZ_s",
-          "channel": "Gradient Damage",
-          "viewCount": 30,
-          "duration": 1751
-        }
-      ]
+      "videos": []
     },
     "334": {
       "query": "A smooth surface metric with no local isometric immersion in ℝ^3 Differential geometry mathematics",
       "candidatesScanned": 5,
       "videos": [
-        {
-          "id": "6Tz3kgHKZ_s",
-          "title": "Every OpenAI Math Result, Part 4 of 4: L = BPL, Integer Multiplication and 82 More | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=6Tz3kgHKZ_s",
-          "channel": "Gradient Damage",
-          "viewCount": 30,
-          "duration": 1751
-        },
         {
           "id": "LMb6IkdPbo8",
           "title": "Not Even a Piece Fits in 3D? AI Claims a Smooth Metric with No Local Isometric Immersion",
@@ -4766,22 +4458,6 @@
           "channel": "Institut des Hautes Etudes Scientifiques (IHES)",
           "viewCount": 513,
           "duration": 5306
-        },
-        {
-          "id": "MIOhvToNg64",
-          "title": "Yau's Uniformization Conjecture, Blaschke Conjecture and 8 More | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=MIOhvToNg64",
-          "channel": "Gradient Damage",
-          "viewCount": 17,
-          "duration": 210
-        },
-        {
-          "id": "lckiipi69OY",
-          "title": "Every OpenAI Math Result, Part 3 of 4: Operator Paving, Naimark's Problem and 82 More | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=lckiipi69OY",
-          "channel": "Gradient Damage",
-          "viewCount": 17,
-          "duration": 1760
         }
       ]
     },
@@ -5006,22 +4682,6 @@
       "candidatesScanned": 4,
       "videos": [
         {
-          "id": "lckiipi69OY",
-          "title": "Every OpenAI Math Result, Part 3 of 4: Operator Paving, Naimark's Problem and 82 More | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=lckiipi69OY",
-          "channel": "Gradient Damage",
-          "viewCount": 17,
-          "duration": 1760
-        },
-        {
-          "id": "-OwodD5NLjA",
-          "title": "Calabi Flow, Affine Bernstein Problem and 7 More in Differential Geometry | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=-OwodD5NLjA",
-          "channel": "Gradient Damage",
-          "viewCount": 9,
-          "duration": 188
-        },
-        {
           "id": "Zcv59jaEubk",
           "title": "The Next Smallest? AI Claims the Solomon–Yau Least-Volume Conjecture",
           "url": "https://www.youtube.com/watch?v=Zcv59jaEubk",
@@ -5201,14 +4861,6 @@
           "duration": 1262
         },
         {
-          "id": "-OwodD5NLjA",
-          "title": "Calabi Flow, Affine Bernstein Problem and 7 More in Differential Geometry | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=-OwodD5NLjA",
-          "channel": "Gradient Damage",
-          "viewCount": 9,
-          "duration": 188
-        },
-        {
           "id": "eFXJbCeqqFA",
           "title": "No Conjugate Points, Yet Never Nonpositive? AI Claims a 3-Manifold Example, with Lean",
           "url": "https://www.youtube.com/watch?v=eFXJbCeqqFA",
@@ -5244,14 +4896,6 @@
           "channel": "Binary Verse AI",
           "viewCount": 1378,
           "duration": 967
-        },
-        {
-          "id": "UWrCItk2euo",
-          "title": "Global mild solutions of the Landau and non-cutoff Boltzmann equation, Robert M. Strain.",
-          "url": "https://www.youtube.com/watch?v=UWrCItk2euo",
-          "channel": "Quoc-Hung Nguyen",
-          "viewCount": 203,
-          "duration": 3320
         },
         {
           "id": "yWoTkOowq44",
@@ -5364,24 +5008,7 @@
     "374": {
       "query": "Sharp one-third stability of Brenier maps Partial differential equations mathematics",
       "candidatesScanned": 2,
-      "videos": [
-        {
-          "id": "lckiipi69OY",
-          "title": "Every OpenAI Math Result, Part 3 of 4: Operator Paving, Naimark's Problem and 82 More | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=lckiipi69OY",
-          "channel": "Gradient Damage",
-          "viewCount": 17,
-          "duration": 1760
-        },
-        {
-          "id": "KrXpxWNkwg0",
-          "title": "Boltzmann Equation, Hot Spots Conjecture and 7 More in Partial Differential Equations | OpenAI Math",
-          "url": "https://www.youtube.com/watch?v=KrXpxWNkwg0",
-          "channel": "Gradient Damage",
-          "viewCount": 12,
-          "duration": 190
-        }
-      ]
+      "videos": []
     },
     "375": {
       "query": "De Giorgi's conjecture in dimension eight Partial differential equations mathematics",
@@ -5456,14 +5083,6 @@
           "channel": "International Centre for Theoretical Sciences",
           "viewCount": 357,
           "duration": 3384
-        },
-        {
-          "id": "z4d4DFomJXo",
-          "title": "EGME 333 FALL 2026 Week 10 Lecture 2",
-          "url": "https://www.youtube.com/watch?v=z4d4DFomJXo",
-          "channel": "Justin Tran",
-          "viewCount": 52,
-          "duration": 5194
         }
       ]
     },
@@ -5524,22 +5143,6 @@
           "channel": "LLMs Explained",
           "viewCount": 1045,
           "duration": 855
-        },
-        {
-          "id": "qaBDYSIjucw",
-          "title": "OpenAI Says Its AI Disproved a Famous Computing Conjecture",
-          "url": "https://www.youtube.com/watch?v=qaBDYSIjucw",
-          "channel": "Ohmhytte",
-          "viewCount": 1032,
-          "duration": 592
-        },
-        {
-          "id": "YACteK0R9MQ",
-          "title": "AI disproved a 27-year-old CS conjecture",
-          "url": "https://www.youtube.com/watch?v=YACteK0R9MQ",
-          "channel": "Basis",
-          "viewCount": 884,
-          "duration": 174
         },
         {
           "id": "He5-GR0iV2I",
@@ -6072,14 +5675,6 @@
           "duration": 1977
         },
         {
-          "id": "pjZsXT1uMWg",
-          "title": "OpenAI Claims to Solve a Mystery About π. Why 2 Matters",
-          "url": "https://www.youtube.com/watch?v=pjZsXT1uMWg",
-          "channel": "Mathify - Animate math by chatting with AI",
-          "viewCount": 14024,
-          "duration": 2680
-        },
-        {
           "id": "VPOEU0HO-4Q",
           "title": "Irrationality Exponent of Pi: Inside OpenAI’s Claimed Leap From 7.1 to 2",
           "url": "https://www.youtube.com/watch?v=VPOEU0HO-4Q",
@@ -6335,22 +5930,6 @@
           "duration": 1370
         },
         {
-          "id": "06659pv1u9M",
-          "title": "Algorithms for Egyptian Fractions",
-          "url": "https://www.youtube.com/watch?v=06659pv1u9M",
-          "channel": "Wolfram Demonstrations Project",
-          "viewCount": 787,
-          "duration": 16
-        },
-        {
-          "id": "jvXSkvuRahA",
-          "title": "Egyptian Fractions",
-          "url": "https://www.youtube.com/watch?v=jvXSkvuRahA",
-          "channel": "Wolfram Demonstrations Project",
-          "viewCount": 432,
-          "duration": 8
-        },
-        {
           "id": "4BdaSKLe028",
           "title": "Egyptian Fractions Explained : The Ancient Math Problem Still Unsolved",
           "url": "https://www.youtube.com/watch?v=4BdaSKLe028",
@@ -6421,14 +6000,6 @@
       "query": "Primitive roots for every admissible integer base Number theory mathematics",
       "candidatesScanned": 5,
       "videos": [
-        {
-          "id": "9VY5cFeioiI",
-          "title": "【素数で1を割ると】小数のくり返しが最長の「素数−1」けたになる素数は無限にある？OpenAIのAIが出した答え",
-          "url": "https://www.youtube.com/watch?v=9VY5cFeioiI",
-          "channel": "MathVis - 数学ビジュアライズ",
-          "viewCount": 5713,
-          "duration": 758
-        },
         {
           "id": "A5oeO6d1Mes",
           "title": "Artin’s Primitive Root Conjecture: How OpenAI’s Proof Breaks the 99 Year Infinitude Barrier",
@@ -6506,14 +6077,6 @@
           "channel": "Mathematics video VAROQUI Hervé",
           "viewCount": 452,
           "duration": 3190
-        },
-        {
-          "id": "JsIOUIQGehw",
-          "title": "Singular Moduli",
-          "url": "https://www.youtube.com/watch?v=JsIOUIQGehw",
-          "channel": "Microsoft Research",
-          "viewCount": 186,
-          "duration": 3979
         },
         {
           "id": "5WMvzzPYhOU",
@@ -6958,14 +6521,6 @@
       "query": "Fundamental groups of special complex varieties and root orbifolds Algebraic and complex geometry mathematics",
       "candidatesScanned": 15,
       "videos": [
-        {
-          "id": "ctViqCrKPPo",
-          "title": "Princess Among Groups | Professor Balasubramanian Sury",
-          "url": "https://www.youtube.com/watch?v=ctViqCrKPPo",
-          "channel": "Math Club, ISI Kolkata",
-          "viewCount": 222,
-          "duration": 5610
-        },
         {
           "id": "gSQ04ZLmb-Y",
           "title": "On the toric manifolds arising from the root systems of type B and type C",

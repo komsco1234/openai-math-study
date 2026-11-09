@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { execFile } from "node:child_process";
 import { readFile, writeFile } from "node:fs/promises";
 import { promisify } from "node:util";
+import { hasSpecificMatch } from "./relevance.mjs";
 
 const exec = promisify(execFile);
 const cataloguePath = new URL("../data/catalog.json", import.meta.url);
@@ -20,13 +21,27 @@ const stopwords = new Set([
 const tokens = (value) => [...new Set(value.toLocaleLowerCase().match(/[a-z0-9]+/g) ?? [])]
   .filter((token) => token.length >= 4 && !stopwords.has(token));
 
+const minDuration = 60;
+
+const familyKeywords = (family) => tokens(`${family.title} ${family.manuscripts.map((paper) => paper.title).join(" ")}`);
+
+// The title itself must name the topic; descriptions of compilation videos list many unrelated results.
+const titleNamesTopic = (family, title) => {
+  const titleTokens = new Set(tokens(title ?? ""));
+  return hasSpecificMatch(familyKeywords(family).filter((keyword) => titleTokens.has(keyword)));
+};
+
+const longEnough = (duration) => !Number.isFinite(duration) || duration >= minDuration;
+
 const relevant = (family, video) => {
-  const keywords = tokens(`${family.title} ${family.manuscripts.map((paper) => paper.title).join(" ")}`);
+  const keywords = familyKeywords(family);
   const titleTokens = new Set(tokens(video.title ?? ""));
   const allTokens = new Set(tokens(`${video.title ?? ""} ${video.description ?? ""}`));
   const titleMatches = keywords.filter((keyword) => titleTokens.has(keyword));
   const allMatches = keywords.filter((keyword) => allTokens.has(keyword));
-  return keywords.length === 0 || titleMatches.length >= 2 || titleMatches.some((keyword) => keyword.length >= 10) ||
+  if (keywords.length === 0) return true;
+  if (!longEnough(video.duration) || !titleNamesTopic(family, video.title)) return false;
+  return titleMatches.length >= 2 || titleMatches.some((keyword) => keyword.length >= 10) ||
     allMatches.length >= 3 || allMatches.some((keyword) => keyword.length >= 12);
 };
 
@@ -63,9 +78,9 @@ const search = async (family) => {
   throw lastError;
 };
 
-const save = async (families) => writeFile(outputPath, `${JSON.stringify({
+const save = async (families, generatedAt = new Date().toISOString()) => writeFile(outputPath, `${JSON.stringify({
   source: "YouTube search via yt-dlp",
-  generatedAt: new Date().toISOString(),
+  generatedAt,
   selection: `Top ${videoLimit} relevant videos by view count from ${candidateLimit} search candidates`,
   families
 }, null, 2)}\n`);
@@ -83,13 +98,34 @@ const selfCheck = () => {
     { id: "generic", title: "Subgame perfection for extensive form games", description: "Perfect strategies in games", view_count: 1000 },
     { id: "specific", title: "Perfect completeness for 2-to-1 games", description: "Khot hardness", view_count: 10 }
   ]).map((video) => video.id), ["specific"]);
+  const fractions = { title: "Egyptian fractions with bounded denominators.", manuscripts: [{ title: "Egyptian fractions" }] };
+  assert.deepEqual(rank(fractions, [
+    { id: "short", title: "Egyptian Fractions", description: "", view_count: 900, duration: 8 },
+    { id: "mix", title: "Every OpenAI Math Result, Part 4 of 4", description: "egyptian fractions denominators bounded", view_count: 800, duration: 3000 },
+    { id: "lecture", title: "Egyptian fractions explained", description: "denominators", view_count: 10, duration: 600 }
+  ]).map((video) => video.id), ["lecture"]);
   console.log("self-check passed");
+};
+
+// Re-apply the current title and duration rules to data/youtube.json without calling yt-dlp.
+const refilter = async (catalogue) => {
+  const stored = JSON.parse(await readFile(outputPath, "utf8"));
+  const byId = new Map(catalogue.families.map((family) => [family.id, family]));
+  let removed = 0;
+  for (const [id, record] of Object.entries(stored.families)) {
+    const kept = record.videos.filter((video) => longEnough(video.duration) && titleNamesTopic(byId.get(id), video.title));
+    removed += record.videos.length - kept.length;
+    record.videos = kept;
+  }
+  await save(stored.families, stored.generatedAt);
+  console.log(`Removed ${removed} videos`);
 };
 
 const main = async () => {
   if (process.argv.includes("--self-check")) return selfCheck();
-  if (!ytDlp) throw new Error("Usage: node scripts/fetch-youtube.mjs <path-to-yt-dlp>");
   const catalogue = JSON.parse(await readFile(cataloguePath, "utf8"));
+  if (process.argv.includes("--refilter")) return refilter(catalogue);
+  if (!ytDlp) throw new Error("Usage: node scripts/fetch-youtube.mjs <path-to-yt-dlp>");
   let families = {};
   if (!process.argv.includes("--refresh")) {
     try {

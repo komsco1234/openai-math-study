@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { readFile, writeFile } from "node:fs/promises";
+import { hasSpecificMatch, stripTags } from "./relevance.mjs";
 
 const cataloguePath = new URL("../data/catalog.json", import.meta.url);
 const outputPath = new URL("../data/papers.json", import.meta.url);
@@ -16,12 +17,16 @@ const stopwords = new Set([
 const tokens = (value) => [...new Set(value.toLocaleLowerCase().match(/[a-z0-9]+/g) ?? [])]
   .filter((token) => token.length >= 4 && !stopwords.has(token));
 
-const relevant = (family, item) => {
+const excludedTypes = new Set(["component", "dataset", "peer-review"]);
+
+const relevantTitle = (family, title) => {
   const keywords = tokens(`${family.title} ${family.manuscripts.map((paper) => paper.title).join(" ")}`);
-  const titleTokens = new Set(tokens(item.title?.[0] ?? ""));
+  const titleTokens = new Set(tokens(stripTags(title ?? "")));
   const matches = keywords.filter((keyword) => titleTokens.has(keyword));
-  return keywords.length === 0 || matches.length >= 2;
+  return keywords.length === 0 || (matches.length >= 2 && hasSpecificMatch(matches));
 };
+
+const relevant = (family, item) => !excludedTypes.has(item.type) && relevantTitle(family, item.title?.[0]);
 
 const authors = (item) => (item.author ?? []).slice(0, 4).map((author) =>
   author.name || [author.given, author.family].filter(Boolean).join(" ")
@@ -31,7 +36,7 @@ const normalize = (item) => {
   const doi = item.DOI?.toLocaleLowerCase() ?? null;
   return {
     doi,
-    title: item.title[0],
+    title: stripTags(item.title[0]),
     url: doi ? `https://doi.org/${doi}` : item.URL,
     authors: authors(item),
     year: item.published?.["date-parts"]?.[0]?.[0] ?? null,
@@ -72,9 +77,9 @@ const search = async (family) => {
   throw lastError;
 };
 
-const save = async (families) => writeFile(outputPath, `${JSON.stringify({
+const save = async (families, generatedAt = new Date().toISOString()) => writeFile(outputPath, `${JSON.stringify({
   source: "Crossref REST API",
-  generatedAt: new Date().toISOString(),
+  generatedAt,
   selection: `Top ${paperLimit} relevant works by citation count from ${candidateLimit} title-search candidates`,
   families
 }, null, 2)}\n`);
@@ -87,12 +92,34 @@ const selfCheck = () => {
     { DOI: "10.1/c", URL: "https://doi.org/10.1/c", title: ["Rationality and specialization"], "is-referenced-by-count": 8 }
   ]);
   assert.deepEqual(papers.map((paper) => paper.doi), ["10.1/c", "10.1/a"]);
+  const cylinder = { title: "Cylinder coverings below the half-area bound.", manuscripts: [{ title: "Covering a cylinder below half area" }] };
+  assert.deepEqual(rank(cylinder, [
+    { DOI: "10.1/d", URL: "u", title: ["Below the Zero Lower Bound: a shadow-rate model"], "is-referenced-by-count": 50 },
+    { DOI: "10.1/e", URL: "u", title: ["Cylinder coverings"], type: "dataset", "is-referenced-by-count": 40 },
+    { DOI: "10.1/f", URL: "u", title: ["Covering a <i>cylinder</i> by strips"], "is-referenced-by-count": 1 }
+  ]).map((paper) => [paper.doi, paper.title]), [["10.1/f", "Covering a cylinder by strips"]]);
   console.log("self-check passed");
+};
+
+// Re-apply the current relevance rules to data/papers.json without calling Crossref.
+const refilter = async (catalogue) => {
+  const stored = JSON.parse(await readFile(outputPath, "utf8"));
+  const byId = new Map(catalogue.families.map((family) => [family.id, family]));
+  let removed = 0;
+  for (const [id, record] of Object.entries(stored.families)) {
+    const kept = record.papers.map((paper) => ({ ...paper, title: stripTags(paper.title) }))
+      .filter((paper) => !excludedTypes.has(paper.type) && relevantTitle(byId.get(id), paper.title));
+    removed += record.papers.length - kept.length;
+    record.papers = kept;
+  }
+  await save(stored.families, stored.generatedAt);
+  console.log(`Removed ${removed} papers`);
 };
 
 const main = async () => {
   if (process.argv.includes("--self-check")) return selfCheck();
   const catalogue = JSON.parse(await readFile(cataloguePath, "utf8"));
+  if (process.argv.includes("--refilter")) return refilter(catalogue);
   let families = {};
   if (!process.argv.includes("--refresh")) {
     try {

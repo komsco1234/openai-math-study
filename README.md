@@ -8,8 +8,8 @@ OpenAI의 [`openai/math`](https://github.com/openai/math) 연구 카탈로그를
 - 17개 수학 분야 분류
 - Lean 형식화 링크 245개
 - reasoning summary PDF 10개
-- 373개 난제별 YouTube 검색 결과: 관련 영상 675개, 250개 계열에 최대 10개씩 제공
-- 373개 난제별 Crossref 검색 결과: 관련 DOI 논문 3,508개, 368개 계열에 최대 10개씩 제공
+- 373개 난제별 YouTube 검색 결과: 관련 영상 620개, 245개 계열에 최대 10개씩 제공
+- 373개 난제별 Crossref 검색 결과: 관련 DOI 논문 3,479개, 368개 계열에 최대 10개씩 제공
 - 전체 개요 PDF, 원본 카탈로그, 변경 이력, Apache-2.0 라이선스
 - 업스트림 커밋: `4eaee87548250b2682affda7d05d947c05554bae`
 
@@ -54,11 +54,15 @@ YouTube 자료는 2026-11-06에 난제 제목과 분야로 검색한 후보 15�
    - 이어서 수집: `node scripts/fetch-papers.mjs`
    - 처음부터 다시 수집: `node scripts/fetch-papers.mjs --refresh`
 
+   - 수집 없이 현재 관련성 규칙만 다시 적용: `node scripts/fetch-papers.mjs --refilter`
 3. YouTube 자료 갱신(yt-dlp 실행 파일 경로를 첫 인자로 지정)
    - 점검: `node scripts/fetch-youtube.mjs --self-check`
    - 이어서 수집: `node scripts/fetch-youtube.mjs <yt-dlp 경로>`
    - 처음부터 다시 수집: `node scripts/fetch-youtube.mjs <yt-dlp 경로> --refresh`
 
+   - 수집 없이 현재 관련성 규칙만 다시 적용: `node scripts/fetch-youtube.mjs --refilter`
+
+관련성 규칙: 논문은 제목에 계열 핵심어가 2개 이상, 그중 일반어(`scripts/relevance.mjs`의 `genericWords`)가 아닌 단어가 1개 이상 있어야 하며 `dataset`·`peer-review`·`component` 유형은 제외합니다. 영상은 제목에 일반어가 아닌 계열 핵심어가 있어야 하고 60초 미만이면 제외합니다.
 ## 출처와 라이선스
 
 데이터 출처는 [`openai/math`](https://github.com/openai/math)이며 Apache-2.0 라이선스를 따릅니다. 사이트 코드도 같은 라이선스로 배포합니다. 이 프로젝트는 OpenAI의 공식 웹사이트가 아닌 비공식 학습 도구입니다.
