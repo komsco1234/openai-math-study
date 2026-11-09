@@ -64,6 +64,13 @@ YouTube 자료는 2026-11-06에 난제 제목과 분야로 검색한 후보 15�
 
 관련성 규칙: 논문은 제목에 계열 핵심어가 2개 이상, 그중 일반어(`scripts/relevance.mjs`의 `genericWords`)가 아닌 단어가 1개 이상 있어야 하며 `dataset`·`peer-review`·`component` 유형은 제외합니다. 영상은 제목에 일반어가 아닌 계열 핵심어가 있어야 하고 60초 미만이면 제외합니다.
 
+## 방문 분석
+
+- `analytics.js`가 Google 태그 매니저 컨테이너 `GTM-KWFMNN6B`를 불러옵니다. CSP가 인라인 스크립트를 막기 때문에 GTM 스니펫을 별도 파일로 둡니다.
+- GA4(측정 ID `G-P8T8NS9K95`)는 사이트 코드가 아니라 GTM 안의 Google 태그로 보냅니다. 유입 경로(소스·매체·리퍼러)와 페이지 조회, 스크롤, 이탈 클릭은 GA4 향상된 측정으로 수집합니다. 상세 패널을 열 때 바뀌는 `#family-NNN` 주소도 기록 변경 이벤트로 페이지 조회에 잡힙니다.
+- 목표(전환): 상세 패널에서 "공부 완료"를 누르면 `dataLayer`에 `study_complete` 이벤트(`family_id`, `family_subject`)를 보냅니다. GTM의 맞춤 이벤트 트리거가 이를 GA4 이벤트로 전달하고, GA4에서 주요 이벤트로 표시합니다.
+- `_headers`의 CSP는 `*.googletagmanager.com`, `*.google-analytics.com`, `*.analytics.google.com`만 추가로 허용합니다. GTM에서 맞춤 HTML 태그나 맞춤 JavaScript 변수를 쓰려면 CSP를 함께 바꿔야 합니다.
+
 ## 출처와 라이선스
 
 데이터 출처는 [`openai/math`](https://github.com/openai/math)이며 Apache-2.0 라이선스를 따릅니다. 사이트 코드도 같은 라이선스로 배포합니다. 이 프로젝트는 OpenAI의 공식 웹사이트가 아닌 비공식 학습 도구입니다.

@@ -173,6 +173,8 @@ const ensureDetailData = (key, url, selector, render) => {
 
 function toggleStored(collection, key, family, action) {
   if (collection.has(family.id)) collection.delete(family.id); else collection.add(family.id);
+  // Conversion goal for GTM/GA4: a family marked as studied (not when it is un-marked).
+  if (action === "studied" && collection.has(family.id)) window.dataLayer?.push({ event: "study_complete", family_id: family.id, family_subject: family.subject });
   saveSet(key, collection); renderResults(); renderDetail(family);
   nodes.detailContent.querySelector(`[data-action="${action}"]`)?.focus();
 }
