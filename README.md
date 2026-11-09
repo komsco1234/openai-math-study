@@ -10,6 +10,7 @@ OpenAI의 [`openai/math`](https://github.com/openai/math) 연구 카탈로그를
 - reasoning summary PDF 10개
 - 373개 난제별 YouTube 검색 결과: 관련 영상 620개, 245개 계열에 최대 10개씩 제공
 - 373개 난제별 Crossref 검색 결과: 관련 DOI 논문 3,479개, 368개 계열에 최대 10개씩 제공
+- [Binary Verse AI](https://binaryverseai.com/) 영문 해설 글 129개를 128개 계열에 연결(제목·링크만 저장)
 - 전체 개요 PDF, 원본 카탈로그, 변경 이력, Apache-2.0 라이선스
 - 업스트림 커밋: `4eaee87548250b2682affda7d05d947c05554bae`
 
@@ -33,6 +34,7 @@ python -m http.server 4173
 - 키보드 탐색, 명확한 포커스, reduced-motion 지원
 - 난제별 YouTube 학습 영상 조회수순 목록과 영상이 없는 계열의 직접 검색 링크
 - 난제별 관련 논문의 DOI 링크, 저자·연도·학술지·인용 수 메타데이터
+- 해설 글이 있는 계열은 상세 패널 맨 위에 "쉬운 해설 글" 링크 표시
 
 YouTube 자료는 2026-11-06에 난제 제목과 분야로 검색한 후보 15개에서 관련 핵심어를 확인한 뒤, 수집 당시 조회수 내림차순으로 최대 10개를 선정했습니다. 조회수와 검색 결과는 시간이 지나면 달라질 수 있으며 `scripts/fetch-youtube.mjs`로 갱신할 수 있습니다.
 
@@ -61,6 +63,11 @@ YouTube 자료는 2026-11-06에 난제 제목과 분야로 검색한 후보 15�
    - 이어서 수집: `node scripts/fetch-youtube.mjs <yt-dlp 경로>`
    - 처음부터 다시 수집: `node scripts/fetch-youtube.mjs <yt-dlp 경로> --refresh`
    - 수집 없이 현재 관련성 규칙만 다시 적용: `node scripts/fetch-youtube.mjs --refilter`
+
+4. 해설 글 갱신(Binary Verse AI)
+   - 점검: `node scripts/fetch-explainers.mjs --self-check`
+   - 갱신: `node scripts/fetch-explainers.mjs`
+   - 계열 연결은 `scripts/explainer-map.json`(글 slug → 계열 번호, 연결하지 않을 글은 `null`)에서 직접 검수합니다. 실행하면 아직 검수하지 않은 연구 글과 추천 계열을 출력하니, 확인한 뒤 맵에 추가하고 다시 실행합니다.
 
 관련성 규칙: 논문은 제목에 계열 핵심어가 2개 이상, 그중 일반어(`scripts/relevance.mjs`의 `genericWords`)가 아닌 단어가 1개 이상 있어야 하며 `dataset`·`peer-review`·`component` 유형은 제외합니다. 영상은 제목에 일반어가 아닌 계열 핵심어가 있어야 하고 60초 미만이면 제외합니다.
 

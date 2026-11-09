@@ -2,7 +2,7 @@
 
 const PAGE_SIZE = 36;
 const STORAGE = { bookmarks: "openai-math-bookmarks", studied: "openai-math-studied" };
-const state = { catalogue: null, papers: {}, papersGeneratedAt: null, papersStatus: "idle", videos: {}, videosGeneratedAt: null, videosStatus: "idle", query: "", subject: "", lean: false, reasoning: false, bookmarked: false, studiedOnly: false, selected: null, visible: PAGE_SIZE };
+const state = { catalogue: null, papers: {}, papersGeneratedAt: null, papersStatus: "idle", explainers: {}, explainersGeneratedAt: null, explainersStatus: "idle", videos: {}, videosGeneratedAt: null, videosStatus: "idle", query: "", subject: "", lean: false, reasoning: false, bookmarked: false, studiedOnly: false, selected: null, visible: PAGE_SIZE };
 
 const nodes = {
   search: document.querySelector("#search"), subject: document.querySelector("#subject"), lean: document.querySelector("#lean-only"),
@@ -123,6 +123,7 @@ const renderDetail = (family, focusHeading = false) => {
   if (family.lean) actions.append(element("a", { className: "button", text: "Lean 자료", attrs: { href: family.lean, target: "_blank", rel: "noreferrer" } }));
   if (family.reasoning) actions.append(element("a", { className: "button", text: "Reasoning PDF", attrs: { href: family.reasoning } }));
   nodes.detailContent.append(actions);
+  nodes.detailContent.append(renderExplainerSection(family, state.explainers[family.id], state.explainersGeneratedAt, state.explainersStatus));
   nodes.detailContent.append(renderPaperSection(family, state.papers[family.id], state.papersGeneratedAt, state.papersStatus));
   nodes.detailContent.append(renderVideoSection(family, state.videos[family.id], state.videosGeneratedAt, state.videosStatus));
   const papers = element("section", { className: "manuscript-list" });
@@ -150,6 +151,7 @@ function selectFamily(id, focusHeading = true) {
   updateModalState(true);
   renderDetail(family, focusHeading);
   nodes.detail.scrollTop = 0;
+  ensureDetailData("explainers", "data/explainers.json", ".explainer-section", renderExplainerSection);
   ensureDetailData("papers", "data/papers.json", ".paper-section", renderPaperSection);
   ensureDetailData("videos", "data/youtube.json", ".video-section", renderVideoSection);
 }

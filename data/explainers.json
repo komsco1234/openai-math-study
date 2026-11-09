@@ -1,0 +1,908 @@
+{
+  "source": "https://binaryverseai.com",
+  "generatedAt": "2026-11-09T12:22:53.094Z",
+  "selection": "Reviewed Binary Verse AI explainer posts per family (scripts/explainer-map.json); titles and links only",
+  "families": {
+    "102": [
+      {
+        "title": "Unique Games Conjecture: OpenAI’s Proof And The Approximation Ceiling",
+        "url": "https://binaryverseai.com/unique-games-conjecture/",
+        "published": "2026-10-07"
+      }
+    ],
+    "104": [
+      {
+        "title": "Mean Payoff Games: OpenAI’s Quasipolynomial-Time Proof",
+        "url": "https://binaryverseai.com/mean-payoff-games-openai-proof/",
+        "published": "2026-10-25"
+      }
+    ],
+    "106": [
+      {
+        "title": "Graph Coloring NP Hard? OpenAI’s Three-Color Proof",
+        "url": "https://binaryverseai.com/graph-coloring-np-hard-openai/",
+        "published": "2026-11-08"
+      }
+    ],
+    "107": [
+      {
+        "title": "OpenAI Matrix Multiplication: The Proof Behind The 2.25 Leap",
+        "url": "https://binaryverseai.com/openai-matrix-multiplication/",
+        "published": "2026-10-07"
+      }
+    ],
+    "108": [
+      {
+        "title": "Permanent Vs Determinant Problem: OpenAI’s Cubic Bound",
+        "url": "https://binaryverseai.com/permanent-vs-determinant-problem-openai-proof/",
+        "published": "2026-10-16"
+      }
+    ],
+    "109": [
+      {
+        "title": "OpenAI Integer Multiplication: A Tiny Crack In The N Log N Barrier",
+        "url": "https://binaryverseai.com/openai-integer-multiplication/",
+        "published": "2026-10-08"
+      }
+    ],
+    "110": [
+      {
+        "title": "Randomized K Server Problem: OpenAI’s Optimal Log² K Proof",
+        "url": "https://binaryverseai.com/randomized-k-server-problem-openai-proof/",
+        "published": "2026-10-25"
+      }
+    ],
+    "111": [
+      {
+        "title": "Matroid Prophet Inequality: One Sample, Every Order",
+        "url": "https://binaryverseai.com/matroid-prophet-inequality-openai-proof/",
+        "published": "2026-11-05"
+      }
+    ],
+    "112": [
+      {
+        "title": "Boolean Circuits: OpenAI’s Stronger Depth-Three Lower Bound",
+        "url": "https://binaryverseai.com/boolean-circuits-openai-depth-three-lower-bound/",
+        "published": "2026-10-28"
+      }
+    ],
+    "113": [
+      {
+        "title": "Counting Perfect Matchings: Inside OpenAI’s FPRAS Proof",
+        "url": "https://binaryverseai.com/counting-perfect-matchings-openai-proof/",
+        "published": "2026-10-22"
+      }
+    ],
+    "114": [
+      {
+        "title": "Counting Common Bases Of Two Matroids: OpenAI’s FPRAS",
+        "url": "https://binaryverseai.com/counting-common-bases-of-two-matroids/",
+        "published": "2026-10-14"
+      }
+    ],
+    "115": [
+      {
+        "title": "Contingency Table Sampling: How Approximation Becomes Exact",
+        "url": "https://binaryverseai.com/contingency-table-sampling-openai-proofs/",
+        "published": "2026-11-06"
+      }
+    ],
+    "118": [
+      {
+        "title": "Bin Packing Problem: OpenAI’s Unbounded LP Gap Proof",
+        "url": "https://binaryverseai.com/bin-packing-problem-openai-proof/",
+        "published": "2026-10-28"
+      }
+    ],
+    "119": [
+      {
+        "title": "Courtade Kumar Conjecture Solved? Two AI-Assisted Proofs End A 13-Year Wait",
+        "url": "https://binaryverseai.com/courtade-kumar-conjecture-solved-ai-proofs/",
+        "published": "2026-09-22"
+      }
+    ],
+    "120": [
+      {
+        "title": "Maximum Cardinality Matching: OpenAI’s Almost-Linear Proof",
+        "url": "https://binaryverseai.com/maximum-cardinality-matching-openai-proof/",
+        "published": "2026-10-20"
+      }
+    ],
+    "122": [
+      {
+        "title": "Trace Reconstruction: OpenAI Proof Rules Out Polynomial Samples",
+        "url": "https://binaryverseai.com/trace-reconstruction-openai-proof/",
+        "published": "2026-10-24"
+      }
+    ],
+    "124": [
+      {
+        "title": "Three Machine Scheduling: OpenAI Proof Solves 47-Year Puzzle",
+        "url": "https://binaryverseai.com/three-machine-scheduling-openai-proof/",
+        "published": "2026-10-23"
+      }
+    ],
+    "125": [
+      {
+        "title": "K Median Problem: OpenAI’s Optimal Limit If P ≠ NP",
+        "url": "https://binaryverseai.com/k-median-problem-openai-proof/",
+        "published": "2026-10-27"
+      }
+    ],
+    "128": [
+      {
+        "title": "Shortest Common Superstring: OpenAI’s Factor-2 Proof",
+        "url": "https://binaryverseai.com/shortest-common-superstring-openai-proof/",
+        "published": "2026-10-23"
+      }
+    ],
+    "130": [
+      {
+        "title": "Discrete Fourier Transform Complexity: OpenAI Beats N Log N",
+        "url": "https://binaryverseai.com/discrete-fourier-transform-complexity-openai-proof/",
+        "published": "2026-10-12"
+      }
+    ],
+    "131": [
+      {
+        "title": "Switch Chain Mixing Conjecture: OpenAI’s Universal Proof",
+        "url": "https://binaryverseai.com/switch-chain-mixing-conjecture-openai-proof/",
+        "published": "2026-10-26"
+      }
+    ],
+    "132": [
+      {
+        "title": "Quadratic Sensitivity Conjecture: OpenAI Breaks The Bound",
+        "url": "https://binaryverseai.com/quadratic-sensitivity-conjecture-openai-proof/",
+        "published": "2026-10-23"
+      }
+    ],
+    "133": [
+      {
+        "title": "Weisfeiler Leman Time Complexity: OpenAI’s N^Ω(k) Proof",
+        "url": "https://binaryverseai.com/weisfeiler-leman-time-complexity-openai-proof/",
+        "published": "2026-11-04"
+      }
+    ],
+    "134": [
+      {
+        "title": "Generalized Star Height Problem: OpenAI’s Bound Of Three",
+        "url": "https://binaryverseai.com/generalized-star-height-problem-openai-proof/",
+        "published": "2026-10-18"
+      }
+    ],
+    "136": [
+      {
+        "title": "PCP For PPAD Conjecture: Proof That Survives Broken Gates",
+        "url": "https://binaryverseai.com/pcp-for-ppad-conjecture-openai-proof/",
+        "published": "2026-11-05"
+      }
+    ],
+    "137": [
+      {
+        "title": "Time Space Tradeoff In Turing Machines: OpenAI Proof",
+        "url": "https://binaryverseai.com/time-space-tradeoff-in-turing-machines-openai/",
+        "published": "2026-10-23"
+      }
+    ],
+    "138": [
+      {
+        "title": "Subset Sum Problem: OpenAI Breaks A 52-Year Exponent Barrier",
+        "url": "https://binaryverseai.com/subset-sum-problem-openai-proof/",
+        "published": "2026-10-13"
+      }
+    ],
+    "139": [
+      {
+        "title": "Log Concave Sampling: OpenAI’s Subpolynomial Query Proof",
+        "url": "https://binaryverseai.com/log-concave-sampling-openai-proof/",
+        "published": "2026-10-29"
+      }
+    ],
+    "141": [
+      {
+        "title": "Existential Theory Of The Reals: OpenAI’s Counting Bound",
+        "url": "https://binaryverseai.com/existential-theory-of-the-reals-openai-proof/",
+        "published": "2026-10-22"
+      }
+    ],
+    "143": [
+      {
+        "title": "Hilbert’s 16th Problem: OpenAI’s Limit-Cycle Proof Explained",
+        "url": "https://binaryverseai.com/hilberts-16th-problem-uniform-limit-cycle/",
+        "published": "2026-10-10"
+      }
+    ],
+    "146": [
+      {
+        "title": "Standard Map Chaos: OpenAI’s Positive-Area Proof Explained",
+        "url": "https://binaryverseai.com/standard-map-chaos-openai-proof/",
+        "published": "2026-10-31"
+      }
+    ],
+    "150": [
+      {
+        "title": "Irrational Triangular Billiards: OpenAI’s Ergodicity Proof",
+        "url": "https://binaryverseai.com/irrational-triangular-billiards-openai-proof/",
+        "published": "2026-10-15"
+      }
+    ],
+    "151": [
+      {
+        "title": "Shub Entropy Conjecture: The Clock That Erases Entropy",
+        "url": "https://binaryverseai.com/shub-entropy-conjecture-c1-counterexample/",
+        "published": "2026-11-02"
+      }
+    ],
+    "155": [
+      {
+        "title": "Periodic Tiling Conjecture: OpenAI’s 3D Counterexample",
+        "url": "https://binaryverseai.com/periodic-tiling-conjecture-openai-3d-proof/",
+        "published": "2026-10-14"
+      }
+    ],
+    "156": [
+      {
+        "title": "Borsuk Conjecture: OpenAI’s 9D Proof Breaks The 63D Record",
+        "url": "https://binaryverseai.com/borsuk-conjecture-openai-proof/",
+        "published": "2026-10-12"
+      }
+    ],
+    "157": [
+      {
+        "title": "Hadwiger Conjecture: Inside OpenAI’s Counterexample Proof",
+        "url": "https://binaryverseai.com/hadwiger-conjecture-openai-counterexample/",
+        "published": "2026-10-18"
+      }
+    ],
+    "158": [
+      {
+        "title": "Hadwiger–Nelson Problem: OpenAI Rules Out Five Colors",
+        "url": "https://binaryverseai.com/hadwiger-nelson-problem-openai-proof/",
+        "published": "2026-10-08"
+      }
+    ],
+    "159": [
+      {
+        "title": "Erdős–Turán Conjecture: Inside OpenAI’s Proof",
+        "url": "https://binaryverseai.com/erdos-turan-conjecture-openai-proof/",
+        "published": "2026-10-11"
+      }
+    ],
+    "161": [
+      {
+        "title": "Sidorenko Conjecture: OpenAI’s 35-Vertex Counterexample",
+        "url": "https://binaryverseai.com/sidorenko-conjecture-openai-counterexample/",
+        "published": "2026-10-11"
+      }
+    ],
+    "164": [
+      {
+        "title": "Hindman Finite Sums And Products Conjecture: OpenAI Proof",
+        "url": "https://binaryverseai.com/hindman-finite-sums-and-products-conjecture/",
+        "published": "2026-10-24"
+      }
+    ],
+    "165": [
+      {
+        "title": "Crossing Number Of Complete Graphs: OpenAI’s Proof",
+        "url": "https://binaryverseai.com/crossing-number-of-complete-graphs-openai-proof/",
+        "published": "2026-10-30"
+      }
+    ],
+    "170": [
+      {
+        "title": "Ramsey Number Bounds For R(5,t) | OpenAI’s Proof",
+        "url": "https://binaryverseai.com/ramsey-number-bounds-openai-proof/",
+        "published": "2026-11-09"
+      }
+    ],
+    "173": [
+      {
+        "title": "Seymour Second Neighborhood Conjecture: Proof Explained",
+        "url": "https://binaryverseai.com/seymour-second-neighborhood-conjecture-proof/",
+        "published": "2026-11-02"
+      }
+    ],
+    "179": [
+      {
+        "title": "Barker Sequence Conjecture: OpenAI Proof Explained",
+        "url": "https://binaryverseai.com/barker-sequence-conjecture-openai-proof/",
+        "published": "2026-10-22"
+      }
+    ],
+    "180": [
+      {
+        "title": "Barnette’s Conjecture: OpenAI’s Surprising Proof Explained",
+        "url": "https://binaryverseai.com/barnettes-conjecture-openai-proof/",
+        "published": "2026-10-08"
+      }
+    ],
+    "196": [
+      {
+        "title": "Kaplansky Zero-Divisor Conjecture: OpenAI's Proof Explained",
+        "url": "https://binaryverseai.com/kaplansky-zero-divisor-conjecture/",
+        "published": "2026-10-10"
+      }
+    ],
+    "197": [
+      {
+        "title": "Kaplansky Direct Finiteness Conjecture: When Inverses Fail",
+        "url": "https://binaryverseai.com/kaplansky-direct-finiteness-conjecture-openai/",
+        "published": "2026-10-18"
+      }
+    ],
+    "214": [
+      {
+        "title": "Benjamini–Schramm Nonuniqueness Conjecture: OpenAI Proof",
+        "url": "https://binaryverseai.com/benjamini-schramm-nonuniqueness-conjecture/",
+        "published": "2026-10-14"
+      }
+    ],
+    "216": [
+      {
+        "title": "BKT Transition: OpenAI’s XY Correlation-Length Proof",
+        "url": "https://binaryverseai.com/bkt-transition-openai-xy-model-openai-proof/",
+        "published": "2026-10-16"
+      }
+    ],
+    "221": [
+      {
+        "title": "Mezard Parisi Formula: OpenAI’s Proof Explained",
+        "url": "https://binaryverseai.com/mezard-parisi-formula-openai-proof/",
+        "published": "2026-10-16"
+      }
+    ],
+    "222": [
+      {
+        "title": "Spherical Perceptron: OpenAI’s Free Energy Proof Explained",
+        "url": "https://binaryverseai.com/spherical-perceptron-openai-free-energy-proof/",
+        "published": "2026-10-31"
+      }
+    ],
+    "235": [
+      {
+        "title": "Random 3 SAT Threshold: OpenAI’s Computability ProofRandom 3 SAT Threshold: How OpenAI Proved The Critical Ratio Is Computable",
+        "url": "https://binaryverseai.com/random-3-sat-threshold-openai-proof/",
+        "published": "2026-10-25"
+      }
+    ],
+    "238": [
+      {
+        "title": "Thorp Shuffle Mixing Time: OpenAI’s Whole-Deck Proof",
+        "url": "https://binaryverseai.com/thorp-shuffle-mixing-time-openai-cards/",
+        "published": "2026-10-31"
+      }
+    ],
+    "241": [
+      {
+        "title": "Rigidity Of The Turing Degrees: OpenAI’s Four-Oracle Proof",
+        "url": "https://binaryverseai.com/rigidity-of-the-turing-degrees-openai-proof/",
+        "published": "2026-10-18"
+      }
+    ],
+    "242": [
+      {
+        "title": "Single Fold Diophantine Conjecture: OpenAI Proof Explained",
+        "url": "https://binaryverseai.com/single-fold-diophantine-conjecture-openai-proof/",
+        "published": "2026-10-27"
+      }
+    ],
+    "244": [
+      {
+        "title": "Partition Principle Vs Axiom Of Choice: OpenAI’s Proof",
+        "url": "https://binaryverseai.com/partition-principle-vs-axiom-of-choice-openai/",
+        "published": "2026-10-17"
+      }
+    ],
+    "245": [
+      {
+        "title": "Weak Vs Strong Normalization: OpenAI’s β Proof",
+        "url": "https://binaryverseai.com/weak-vs-strong-normalization-openai/",
+        "published": "2026-11-09"
+      }
+    ],
+    "246": [
+      {
+        "title": "Cannon Conjecture: OpenAI’s Breakthrough Proof Of 3D Geometry",
+        "url": "https://binaryverseai.com/cannon-conjecture-openai-proof/",
+        "published": "2026-10-11"
+      }
+    ],
+    "248": [
+      {
+        "title": "Thompson’s Group F: OpenAI’s Nonamenability Proof Explained",
+        "url": "https://binaryverseai.com/thompsons-group-f-openai-nonamenability-proof/",
+        "published": "2026-10-09"
+      }
+    ],
+    "250": [
+      {
+        "title": "Boone Higman Conjecture: Inside OpenAI’s Embedding Proof",
+        "url": "https://binaryverseai.com/boone-higman-conjecture-openai-proof/",
+        "published": "2026-10-13"
+      }
+    ],
+    "260": [
+      {
+        "title": "Spacetime Penrose Inequality: OpenAI’s Proof Explained",
+        "url": "https://binaryverseai.com/spacetime-penrose-inequality-openai/",
+        "published": "2026-10-15"
+      }
+    ],
+    "261": [
+      {
+        "title": "Anderson Localization OpenAI Proof: Extended States In 3D",
+        "url": "https://binaryverseai.com/anderson-localization-openai-proof/",
+        "published": "2026-10-19"
+      }
+    ],
+    "263": [
+      {
+        "title": "Ionization Conjecture: Inside OpenAI’s Extra-Electron Proof",
+        "url": "https://binaryverseai.com/ionization-conjecture-openai-proof/",
+        "published": "2026-10-26"
+      }
+    ],
+    "264": [
+      {
+        "title": "Strong Cosmic Censorship: OpenAI’s Kerr Proof Explained",
+        "url": "https://binaryverseai.com/strong-cosmic-censorship-openai-kerr-proof/",
+        "published": "2026-10-22"
+      }
+    ],
+    "265": [
+      {
+        "title": "2D Area Law: Inside OpenAI’s Global Spectral Gap Proof",
+        "url": "https://binaryverseai.com/2d-area-law-openai-global-spectral-gap-proof/",
+        "published": "2026-10-13"
+      }
+    ],
+    "266": [
+      {
+        "title": "Zauner MUB Conjecture: OpenAI’s Proof Of N(6) = 3",
+        "url": "https://binaryverseai.com/zauner-mub-conjecture-openai-proof/",
+        "published": "2026-10-15"
+      }
+    ],
+    "267": [
+      {
+        "title": "Bose Einstein Condensation Proof: OpenAI’s New Argument",
+        "url": "https://binaryverseai.com/bose-einstein-condensation-proof-openai/",
+        "published": "2026-10-21"
+      }
+    ],
+    "268": [
+      {
+        "title": "Haldane Gap Conjecture: OpenAI’s Quantum Proof Explained",
+        "url": "https://binaryverseai.com/haldane-gap-conjecture-openai-proof/",
+        "published": "2026-10-11"
+      }
+    ],
+    "269": [
+      {
+        "title": "Laughlin Spectral Gap: OpenAI’s Proof And The New 1/5 Bound",
+        "url": "https://binaryverseai.com/laughlin-spectral-gap-conjecture/",
+        "published": "2026-10-14"
+      }
+    ],
+    "271": [
+      {
+        "title": "Quantum Heisenberg Ferromagnet: OpenAI’s 3D Ordering Proof",
+        "url": "https://binaryverseai.com/quantum-heisenberg-ferromagnet-openai-proof/",
+        "published": "2026-10-15"
+      }
+    ],
+    "273": [
+      {
+        "title": "Entropy Photon Number Inequality: OpenAI’s Quantum Light Proof",
+        "url": "https://binaryverseai.com/entropy-photon-number-inequality-openai-proof/",
+        "published": "2026-10-30"
+      }
+    ],
+    "274": [
+      {
+        "title": "Quantum Circuit Lower Bounds: OpenAI’s QAC⁰ Parity Proof",
+        "url": "https://binaryverseai.com/quantum-circuit-lower-bounds-openai-proof/",
+        "published": "2026-10-22"
+      }
+    ],
+    "275": [
+      {
+        "title": "QMA Hardness Of Electronic Structure: OpenAI’s Proof",
+        "url": "https://binaryverseai.com/qma-hardness-of-electronic-structure-openai/",
+        "published": "2026-10-30"
+      }
+    ],
+    "278": [
+      {
+        "title": "Kohn–Sham Representability: OpenAI’s Coulomb Counterexample",
+        "url": "https://binaryverseai.com/kohn-sham-representability-openai-proof/",
+        "published": "2026-11-01"
+      }
+    ],
+    "279": [
+      {
+        "title": "Exact Quantum Factoring: OpenAI’s 100% Proof Explained",
+        "url": "https://binaryverseai.com/exact-quantum-factoring-openai-proof/",
+        "published": "2026-10-17"
+      }
+    ],
+    "281": [
+      {
+        "title": "QAOA Algorithm: OpenAI’s Proof Reaches The SK Optimum",
+        "url": "https://binaryverseai.com/qaoa-algorithm-openai-sk-proof/",
+        "published": "2026-10-29"
+      }
+    ],
+    "283": [
+      {
+        "title": "Unitary Synthesis Problem: OpenAI’s Surprising Answer",
+        "url": "https://binaryverseai.com/unitary-synthesis-problem/",
+        "published": "2026-10-09"
+      }
+    ],
+    "284": [
+      {
+        "title": "Quantum Query Complexity: OpenAI Breaks The Cubic Bound",
+        "url": "https://binaryverseai.com/quantum-query-complexity-openai-proof/",
+        "published": "2026-10-20"
+      }
+    ],
+    "287": [
+      {
+        "title": "Free Group Factor Isomorphism Problem: OpenAI’s Proof",
+        "url": "https://binaryverseai.com/free-group-factor-isomorphism-problem/",
+        "published": "2026-10-10"
+      }
+    ],
+    "297": [
+      {
+        "title": "Naimark Problem ZFC: OpenAI Proof Without Extra Axioms",
+        "url": "https://binaryverseai.com/naimark-problem-zfc-openai-proof/",
+        "published": "2026-10-26"
+      }
+    ],
+    "302": [
+      {
+        "title": "Phillips–Toms Conjecture: OpenAI’s One-Half Proof",
+        "url": "https://binaryverseai.com/phillips-toms-conjecture-proof-openai/",
+        "published": "2026-11-03"
+      }
+    ],
+    "304": [
+      {
+        "title": "Hilbert Smith Conjecture: OpenAI Proof In Every Dimension",
+        "url": "https://binaryverseai.com/hilbert-smith-conjecture-openai-proof/",
+        "published": "2026-10-26"
+      }
+    ],
+    "306": [
+      {
+        "title": "Purely Cosmetic Surgery Conjecture: OpenAI’s Two-Count Proof",
+        "url": "https://binaryverseai.com/purely-cosmetic-surgery-conjecture-openai/",
+        "published": "2026-11-06"
+      }
+    ],
+    "312": [
+      {
+        "title": "Grothendieck Homotopy Hypothesis: The OpenAI Proof",
+        "url": "https://binaryverseai.com/grothendieck-homotopy-hypothesis-openai/",
+        "published": "2026-11-07"
+      }
+    ],
+    "320": [
+      {
+        "title": "Borel Conjecture: OpenAI’s 4D Counterexample",
+        "url": "https://binaryverseai.com/borel-conjecture-openai-counterexample/",
+        "published": "2026-11-08"
+      }
+    ],
+    "321": [
+      {
+        "title": "Wall D2 Problem: OpenAI’s 3D Counterexample Explained",
+        "url": "https://binaryverseai.com/wall-d2-problem-counterexample-openai/",
+        "published": "2026-11-04"
+      }
+    ],
+    "325": [
+      {
+        "title": "Crouzeix's Conjecture: OpenAI’s Sharp Constant-2 Proof",
+        "url": "https://binaryverseai.com/crouzeix-conjecture-openai-complete-proof/",
+        "published": "2026-10-31"
+      }
+    ],
+    "336": [
+      {
+        "title": "Scalar Curvature And Urysohn Width: Spectral Proof",
+        "url": "https://binaryverseai.com/scalar-curvature-and-urysohn-width-openai/",
+        "published": "2026-11-02"
+      }
+    ],
+    "340": [
+      {
+        "title": "Nearby Lagrangian Conjecture: An Exact Twin Out Of Reach",
+        "url": "https://binaryverseai.com/nearby-lagrangian-conjecture-openai-counterexample/",
+        "published": "2026-11-02"
+      }
+    ],
+    "362": [
+      {
+        "title": "Vlasov Maxwell System: OpenAI's Global Regularity Proof",
+        "url": "https://binaryverseai.com/vlasov-maxwell-system-openai-global-regularity/",
+        "published": "2026-10-11"
+      }
+    ],
+    "365": [
+      {
+        "title": "Calderon Inverse Problem: What One Boundary Patch Reveals",
+        "url": "https://binaryverseai.com/calderon-inverse-problem-openai/",
+        "published": "2026-11-06"
+      }
+    ],
+    "367": [
+      {
+        "title": "One Phase Bernoulli Problem: OpenAI Proves Dimension 7",
+        "url": "https://binaryverseai.com/one-phase-bernoulli-problem-openai-proof/",
+        "published": "2026-11-08"
+      }
+    ],
+    "369": [
+      {
+        "title": "Hot Spots Conjecture: OpenAI’s Strict Planar Proof",
+        "url": "https://binaryverseai.com/hot-spots-conjecture-openai-proof/",
+        "published": "2026-11-04"
+      }
+    ],
+    "370": [
+      {
+        "title": "Lane Emden Conjecture: OpenAI’s Subcritical Proof",
+        "url": "https://binaryverseai.com/lane-emden-conjecture-openai-proof/",
+        "published": "2026-10-29"
+      }
+    ],
+    "375": [
+      {
+        "title": "De Giorgi Conjecture Proof In Eight Dimensions | OpenAI",
+        "url": "https://binaryverseai.com/de-giorgi-conjecture-openai-proof/",
+        "published": "2026-11-08"
+      }
+    ],
+    "376": [
+      {
+        "title": "Navier Stokes Turing Complete: OpenAI’s Fixed Force Proof",
+        "url": "https://binaryverseai.com/navier-stokes-turing-complete-openai-proof/",
+        "published": "2026-10-13"
+      }
+    ],
+    "377": [
+      {
+        "title": "Infinity Laplacian Regularity: OpenAI’s C¹,α Proof",
+        "url": "https://binaryverseai.com/infinity-laplacian-regularity-openai-proof/",
+        "published": "2026-11-05"
+      }
+    ],
+    "378": [
+      {
+        "title": "Exponential Time Hypothesis: OpenAI’s 3-SAT Proof",
+        "url": "https://binaryverseai.com/exponential-time-hypothesis-openai-proof/",
+        "published": "2026-10-27"
+      }
+    ],
+    "002": [
+      {
+        "title": "Birch And Swinnerton Dyer Conjecture: The Prime-Factor Gap",
+        "url": "https://binaryverseai.com/birch-and-swinnerton-dyer-conjecture-openai-proof/",
+        "published": "2026-10-17"
+      }
+    ],
+    "003": [
+      {
+        "title": "Quasi-Riemann Hypothesis: What OpenAI’s 7/8 Claim Means",
+        "url": "https://binaryverseai.com/quasi-riemann-hypothesis/",
+        "published": "2026-10-07"
+      }
+    ],
+    "004": [
+      {
+        "title": "Mazur Conjecture: The 962-Variable Quartic Explained",
+        "url": "https://binaryverseai.com/mazur-conjecture-counterexample/",
+        "published": "2026-11-07"
+      },
+      {
+        "title": "Hilbert's 10th Problem: OpenAI's Proposed Proof Explained",
+        "url": "https://binaryverseai.com/hilberts-10th-problem-openai-rationals/",
+        "published": "2026-10-08"
+      }
+    ],
+    "005": [
+      {
+        "title": "Catalan’s Constant: OpenAI’s Irrationality Proof Explained",
+        "url": "https://binaryverseai.com/catalans-constant-irrationality/",
+        "published": "2026-10-09"
+      }
+    ],
+    "006": [
+      {
+        "title": "Goldfeld’s Conjecture Explained: OpenAI’s 50–50 Claim",
+        "url": "https://binaryverseai.com/goldfeld-conjecture/",
+        "published": "2026-10-10"
+      }
+    ],
+    "007": [
+      {
+        "title": "Two-Point Chowla Conjecture: OpenAI's 2026 Proof",
+        "url": "https://binaryverseai.com/two-point-chowla-conjecture-openai-proof/",
+        "published": "2026-10-12"
+      }
+    ],
+    "012": [
+      {
+        "title": "Erdős–Pomerance Conjecture: OpenAI’s 50–50 Proof",
+        "url": "https://binaryverseai.com/erdos-pomerance-conjecture-openai-proof/",
+        "published": "2026-10-29"
+      }
+    ],
+    "013": [
+      {
+        "title": "Inverse Goldbach Conjecture: OpenAI’s Proof Explained",
+        "url": "https://binaryverseai.com/inverse-goldbach-conjecture-openai-proof/",
+        "published": "2026-10-20"
+      }
+    ],
+    "017": [
+      {
+        "title": "Irrationality Exponent Of Pi: OpenAI’s Claim Of 2 Explained",
+        "url": "https://binaryverseai.com/irrationality-exponent-of-pi-openai-proof/",
+        "published": "2026-10-09"
+      }
+    ],
+    "024": [
+      {
+        "title": "Number Of Totients: Inside OpenAI’s Counting Proof",
+        "url": "https://binaryverseai.com/number-of-totients-openai-proof/",
+        "published": "2026-10-30"
+      }
+    ],
+    "025": [
+      {
+        "title": "Short Egyptian Fractions: OpenAI Proves Erdős’s Bound",
+        "url": "https://binaryverseai.com/short-egyptian-fractions-openai-erdos-proof/",
+        "published": "2026-10-16"
+      }
+    ],
+    "026": [
+      {
+        "title": "Large Prime Gaps: OpenAI Proof Solves The Frequency Puzzle",
+        "url": "https://binaryverseai.com/large-prime-gaps-openai-proof/",
+        "published": "2026-10-24"
+      }
+    ],
+    "028": [
+      {
+        "title": "Gaussian Moat Conjecture: OpenAI’s Walk-to-Infinity Proof",
+        "url": "https://binaryverseai.com/gaussian-moat-conjecture-openai-proof/",
+        "published": "2026-10-16"
+      }
+    ],
+    "029": [
+      {
+        "title": "Artin’s Primitive Root Conjecture: OpenAI’s Infinitude Proof",
+        "url": "https://binaryverseai.com/artin-primitive-root-conjecture-openai-proof/",
+        "published": "2026-10-13"
+      }
+    ],
+    "030": [
+      {
+        "title": "Elliptic Curve Modularity: OpenAI’s New Proof Explained",
+        "url": "https://binaryverseai.com/elliptic-curve-modularity-openai-proof/",
+        "published": "2026-10-21"
+      }
+    ],
+    "032": [
+      {
+        "title": "Hodge Conjecture: Inside OpenAI’s CM Proof Claim",
+        "url": "https://binaryverseai.com/hodge-conjecture-openai-cm-proof/",
+        "published": "2026-10-07"
+      }
+    ],
+    "039": [
+      {
+        "title": "Nagata Conjecture: OpenAI Proof Turns Curves Into Lattice Points",
+        "url": "https://binaryverseai.com/nagata-conjecture-openai-proof/",
+        "published": "2026-10-27"
+      }
+    ],
+    "072": [
+      {
+        "title": "Brennan Conjecture Proof: OpenAI’s Sharp Bound Explained",
+        "url": "https://binaryverseai.com/brennan-conjecture-proof-openai/",
+        "published": "2026-10-28"
+      }
+    ],
+    "073": [
+      {
+        "title": "Falconer Distance Conjecture: OpenAI’s Sharp D/2 Proof",
+        "url": "https://binaryverseai.com/falconer-distance-conjecture-openai-proof/",
+        "published": "2026-10-19"
+      }
+    ],
+    "074": [
+      {
+        "title": "Kakeya Conjecture: How OpenAI Claims To Break The 4D Barrier",
+        "url": "https://binaryverseai.com/kakeya-conjecture-openai-4d-proof/",
+        "published": "2026-10-07"
+      }
+    ],
+    "076": [
+      {
+        "title": "Littlewood Polynomials: OpenAI Proof Achieves Ultraflatness",
+        "url": "https://binaryverseai.com/littlewood-polynomials-openai-ultraflat-proof/",
+        "published": "2026-10-24"
+      }
+    ],
+    "079": [
+      {
+        "title": "Local Smoothing Conjecture: OpenAI Proof In All Dimensions",
+        "url": "https://binaryverseai.com/local-smoothing-conjecture-openai-proof/",
+        "published": "2026-10-27"
+      }
+    ],
+    "084": [
+      {
+        "title": "Erdős Similarity Conjecture: OpenAI’s Geometric-Case Proof",
+        "url": "https://binaryverseai.com/erdos-similarity-conjecture-openai-proof/",
+        "published": "2026-11-03"
+      }
+    ],
+    "086": [
+      {
+        "title": "Trilinear Hilbert Transform: OpenAI’s L³ Proof Explained",
+        "url": "https://binaryverseai.com/trilinear-hilbert-transform-openai-proof/",
+        "published": "2026-11-01"
+      }
+    ],
+    "087": [
+      {
+        "title": "Mahler Conjecture: OpenAI’s Claimed Proof Explained",
+        "url": "https://binaryverseai.com/mahler-conjecture-openai-proof/",
+        "published": "2026-10-09"
+      }
+    ],
+    "090": [
+      {
+        "title": "Triangular Lattice Universal Optimality: OpenAI’s Atomic Proof",
+        "url": "https://binaryverseai.com/triangular-lattice-universal-optimality-openai/",
+        "published": "2026-10-25"
+      }
+    ],
+    "091": [
+      {
+        "title": "Logarithmic Brunn Minkowski Conjecture: OpenAI’s Proof",
+        "url": "https://binaryverseai.com/logarithmic-brunn-minkowski-conjecture-openai-proof/",
+        "published": "2026-11-03"
+      }
+    ],
+    "094": [
+      {
+        "title": "Dimension Reduction In Lp: OpenAI’s Subpolynomial Proof",
+        "url": "https://binaryverseai.com/dimension-reduction-in-lp-openai/",
+        "published": "2026-11-09"
+      }
+    ],
+    "095": [
+      {
+        "title": "Generalized Lax Conjecture: A 23-Variable Counterexample",
+        "url": "https://binaryverseai.com/generalized-lax-conjecture-openai-counterexample/",
+        "published": "2026-11-01"
+      }
+    ],
+    "099": [
+      {
+        "title": "Edit Distance Approximation: OpenAI’s Proof Meets DNA Reality",
+        "url": "https://binaryverseai.com/edit-distance-approximation-openai-proof/",
+        "published": "2026-10-12"
+      }
+    ]
+  }
+}

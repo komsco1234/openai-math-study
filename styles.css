@@ -282,8 +282,8 @@ a:hover { color: var(--accent-hover); }
 .detail-description { color: var(--text-secondary); }
 .detail-status { display: flex; flex-wrap: wrap; gap: var(--space-2); }
 
-.video-section, .paper-section { margin-block-start: var(--space-8); }
-.video-section h3, .paper-section h3 { margin-block-end: var(--space-1); font-size: 1.125rem; }
+.video-section, .paper-section, .explainer-section { margin-block-start: var(--space-8); }
+.video-section h3, .paper-section h3, .explainer-section h3 { margin-block-end: var(--space-1); font-size: 1.125rem; }
 .video-note { margin: 0 0 var(--space-4); color: var(--text-muted); font-size: 0.75rem; }
 .video-list, .paper-list { display: grid; gap: var(--space-2); margin: 0; padding: 0; list-style: none; }
 .video-item, .paper-item { display: grid; grid-template-columns: 2rem 1fr; gap: var(--space-3); border-block-start: 1px solid var(--border-default); padding-block: var(--space-3); }
@@ -330,3 +330,4 @@ a:hover { color: var(--accent-hover); }
   .detail-title { font-size: 1.5rem; text-wrap: wrap; }
   .button-row .button { width: 100%; }
 }
+.explainer-item { grid-template-columns: 1fr; }
