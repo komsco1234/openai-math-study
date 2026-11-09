@@ -29,6 +29,7 @@ python -m http.server 4173
 - 분야, Lean 형식화, reasoning 자료 필터
 - 북마크와 공부 완료 상태를 브라우저 `localStorage`에 저장
 - 375px부터 데스크톱까지 반응형 목록·상세 보기
+- 목록 무한 스크롤(36개씩, "결과 더 보기" 버튼으로도 불러오기 가능)과 로딩 중 스켈레톤 표시
 - 키보드 탐색, 명확한 포커스, reduced-motion 지원
 - 난제별 YouTube 학습 영상 조회수순 목록과 영상이 없는 계열의 직접 검색 링크
 - 난제별 관련 논문의 DOI 링크, 저자·연도·학술지·인용 수 메타데이터
@@ -53,16 +54,16 @@ YouTube 자료는 2026-11-06에 난제 제목과 분야로 검색한 후보 15�
    - 점검: `node scripts/fetch-papers.mjs --self-check`
    - 이어서 수집: `node scripts/fetch-papers.mjs`
    - 처음부터 다시 수집: `node scripts/fetch-papers.mjs --refresh`
-
    - 수집 없이 현재 관련성 규칙만 다시 적용: `node scripts/fetch-papers.mjs --refilter`
+
 3. YouTube 자료 갱신(yt-dlp 실행 파일 경로를 첫 인자로 지정)
    - 점검: `node scripts/fetch-youtube.mjs --self-check`
    - 이어서 수집: `node scripts/fetch-youtube.mjs <yt-dlp 경로>`
    - 처음부터 다시 수집: `node scripts/fetch-youtube.mjs <yt-dlp 경로> --refresh`
-
    - 수집 없이 현재 관련성 규칙만 다시 적용: `node scripts/fetch-youtube.mjs --refilter`
 
 관련성 규칙: 논문은 제목에 계열 핵심어가 2개 이상, 그중 일반어(`scripts/relevance.mjs`의 `genericWords`)가 아닌 단어가 1개 이상 있어야 하며 `dataset`·`peer-review`·`component` 유형은 제외합니다. 영상은 제목에 일반어가 아닌 계열 핵심어가 있어야 하고 60초 미만이면 제외합니다.
+
 ## 출처와 라이선스
 
 데이터 출처는 [`openai/math`](https://github.com/openai/math)이며 Apache-2.0 라이선스를 따릅니다. 사이트 코드도 같은 라이선스로 배포합니다. 이 프로젝트는 OpenAI의 공식 웹사이트가 아닌 비공식 학습 도구입니다.

@@ -11,7 +11,9 @@ const renderPaperSection = (family, record, generatedAt, status) => {
   const section = element("section", { className: "paper-section" });
   section.append(element("h3", { text: "관련 논문" }));
   if (status === "idle" || status === "loading") {
-    section.append(paperMessage("관련 논문을 불러오는 중입니다."));
+    section.setAttribute("aria-busy", "true");
+    section.append(element("p", { className: "visually-hidden", text: "관련 논문을 불러오는 중입니다." }));
+    for (let index = 0; index < 3; index += 1) section.append(element("div", { className: "skeleton skeleton-line", attrs: { "aria-hidden": "true" } }));
     return section;
   }
   if (status === "error") {

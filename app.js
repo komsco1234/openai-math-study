@@ -40,9 +40,10 @@ const element = (tag, options = {}) => {
 const badge = (text, variant = "") => element("span", { className: `badge ${variant}`.trim(), text });
 
 const searchableText = (family) => [family.id, family.title, family.description, family.subject, ...family.manuscripts.flatMap((paper) => [paper.title, paper.abstract])].join(" ").replaceAll("$", "").toLocaleLowerCase();
+const searchIndex = new Map();
 
 const filteredFamilies = () => state.catalogue.families.filter((family) => {
-  const matchesQuery = !state.query || searchableText(family).includes(state.query);
+  const matchesQuery = !state.query || searchIndex.get(family.id).includes(state.query);
   return matchesQuery && (!state.subject || family.subject === state.subject) && (!state.lean || family.lean) &&
     (!state.reasoning || family.reasoning) && (!state.bookmarked || bookmarks.has(family.id)) && (!state.studiedOnly || studied.has(family.id));
 });
@@ -64,13 +65,15 @@ const familyRow = (family) => {
   return button;
 };
 
-const renderResults = () => {
+// append=true adds only the newly visible rows so focus and scroll position survive infinite scroll.
+const renderResults = (append = false) => {
   const families = filteredFamilies();
   const visible = families.slice(0, state.visible);
-  nodes.results.replaceChildren();
+  const start = append ? nodes.results.querySelectorAll(".family-row").length : 0;
+  if (!append) nodes.results.replaceChildren();
   nodes.results.setAttribute("aria-busy", "false");
   if (!visible.length) nodes.results.append(element("div", { className: "empty-state", text: "조건에 맞는 결과가 없습니다. 검색어나 필터를 바꿔 보세요." }));
-  else visible.forEach((family) => nodes.results.append(familyRow(family)));
+  else nodes.results.append(...visible.slice(start).map(familyRow));
   nodes.resultCount.textContent = `${families.length.toLocaleString("ko-KR")}개 계열 중 ${visible.length.toLocaleString("ko-KR")}개 표시`;
   nodes.loadMore.hidden = visible.length >= families.length;
   nodes.progress.textContent = `${studied.size.toLocaleString("ko-KR")} / ${state.catalogue.stats.families.toLocaleString("ko-KR")}`;
@@ -82,7 +85,20 @@ const actionButton = (text, active, action, onClick) => {
   return button;
 };
 
-const renderMath = (...targets) => targets.forEach((target) => window.renderMathInElement?.(target, { delimiters: [{ left: "$", right: "$", display: false }], throwOnError: false }));
+const loadScript = (src) => new Promise((resolve, reject) => {
+  const script = element("script", { attrs: { src } });
+  script.addEventListener("load", resolve); script.addEventListener("error", reject);
+  document.head.append(script);
+});
+
+// KaTeX is only needed in the detail panel, so it loads on first use instead of blocking the first paint.
+let katexReady = null;
+const loadKatex = () => katexReady ??= (() => {
+  document.head.append(element("link", { attrs: { rel: "stylesheet", href: "vendor/katex/katex.min.css" } }));
+  return loadScript("vendor/katex/katex.min.js").then(() => loadScript("vendor/katex/auto-render.min.js")).catch(() => {});
+})();
+
+const renderMath = (...targets) => loadKatex().then(() => targets.forEach((target) => window.renderMathInElement?.(target, { delimiters: [{ left: "$", right: "$", display: false }], throwOnError: false })));
 
 const renderDetail = (family, focusHeading = false) => {
   nodes.detailEmpty.hidden = true; nodes.detailContent.hidden = false; nodes.detailContent.replaceChildren();
@@ -196,6 +212,7 @@ const loadCatalogue = async () => {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     if (!data || !Array.isArray(data.families) || typeof data.stats?.families !== "number") throw new Error("Invalid catalogue");
+    data.families.forEach((family) => searchIndex.set(family.id, searchableText(family)));
     state.catalogue = data; state.videos = videoData.data?.families ?? {}; state.videosGeneratedAt = videoData.data?.generatedAt ?? null; state.videosStatus = videoData.status;
     nodes.familyStat.textContent = data.stats.families.toLocaleString("ko-KR"); nodes.manuscriptStat.textContent = data.stats.manuscripts.toLocaleString("ko-KR");
     [...new Set(data.families.map((family) => family.subject))].sort().forEach((subject) => nodes.subject.append(element("option", { text: subject, attrs: { value: subject } })));
@@ -210,7 +227,15 @@ const loadCatalogue = async () => {
 
 [nodes.subject, nodes.lean, nodes.reasoning, nodes.bookmarked, nodes.studiedOnly].forEach((node) => node.addEventListener("change", updateFilters));
 nodes.search.addEventListener("input", updateFilters);
-nodes.loadMore.addEventListener("click", () => { state.visible += PAGE_SIZE; renderResults(); });
+const loadMore = () => { state.visible += PAGE_SIZE; renderResults(true); };
+nodes.loadMore.addEventListener("click", loadMore);
+// Infinite scroll: load the next page when the button nears the viewport; the button stays as a keyboard fallback.
+const loadMoreObserver = new IntersectionObserver((entries) => {
+  if (!entries.some((entry) => entry.isIntersecting) || nodes.loadMore.hidden) return;
+  loadMore();
+  loadMoreObserver.unobserve(nodes.loadMore); loadMoreObserver.observe(nodes.loadMore);
+}, { rootMargin: "600px 0px" });
+loadMoreObserver.observe(nodes.loadMore);
 nodes.closeDetail.addEventListener("click", closeDetail); nodes.detailScrim.addEventListener("click", closeDetail);
 nodes.detail.addEventListener("keydown", trapModalFocus);
 overlayQuery.addEventListener("change", () => updateModalState(document.body.dataset.detailOpen === "true"));

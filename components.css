@@ -131,6 +131,7 @@
   text-align: center;
 }
 .error-state { border-style: solid; background: var(--status-warning-soft); color: var(--status-warning); }
+.skeleton.skeleton-line { min-height: 3rem; margin-block-start: var(--space-2); }
 .skeleton { min-height: 7rem; border-radius: var(--radius-control); background: var(--surface-secondary); opacity: 0.7; animation: proof-pulse 1.2s ease-in-out infinite alternate; }
 .visually-hidden { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%); }
 
